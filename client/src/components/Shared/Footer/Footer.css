@@ -1,0 +1,16 @@
+footer {
+  border: 2px solid red;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-footer {
+  text-decoration: none;
+}
+.logo-container {
+  border: 2px solid yellow;
+  width: 10%;
+  justify-content: center;
+  text-align: center;
+}
