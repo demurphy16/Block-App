@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
 // import "./PostDetail.css";
-import Layout from "../../components/shared/Layout/Layout";
+import Layout from "../../components/Shared/Layout/Layout";
 import { getAnnouncement, deleteAnnouncement } from "../../services/announcements";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, Redirect } from "react-router-dom";
 
 const PostDetail = () => {
   const [announcement, setAnnouncement] = useState(null);
   const [isLoaded, setLoaded] = useState(false);
   const { id } = useParams();
+  const [isDeleted, setDeleted] = useState(false);
 
   useEffect(() => {
     const fetchPost = async () => {
@@ -20,6 +21,16 @@ const PostDetail = () => {
 
   if (!isLoaded) {
     return <h1>Loading...</h1>;
+  }
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const deleted = await deleteAnnouncement(announcement._id);
+    setDeleted({ deleted });
+  };
+
+  if (isDeleted) {
+    return <Redirect to={`/`} />;
   }
 
   return (
@@ -37,7 +48,7 @@ const PostDetail = () => {
             </button>
             <button
               className="delete-button"
-              onClick={() => deleteAnnouncement(announcement._id)}
+              onClick={handleSubmit}
             >
               Delete
             </button>

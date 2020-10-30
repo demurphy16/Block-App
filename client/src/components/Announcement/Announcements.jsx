@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link, Route } from "react-router-dom"
-import PostCreate from "../../screens/PostCreate/PostCreate"
+import { Link } from "react-router-dom"
 // import "./Announcements.css";
 
 import Announcement from "../../components/Announcement/Announcement";
@@ -50,11 +49,10 @@ const Announcements = () => {
         Make an announcement
         </Link>
       <div className="announcements">{announcementsJSX}</div>
+      {/* <Search onSubmit={handleSubmit} onChange={handleSearch} /> */}
     </div>
-    
   )
   
-        {/* <Search onSubmit={handleSubmit} onChange={handleSearch} /> */}
     
 };
 
