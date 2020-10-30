@@ -1,15 +1,18 @@
 footer {
-  border: 2px solid red;
+  background-color: #042a2b;
   height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 15px 0;
 }
 .logo-footer {
   text-decoration: none;
+  color: white;
+  font-size: 24px;
 }
 .logo-container {
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
   width: 10%;
   justify-content: center;
   text-align: center;
