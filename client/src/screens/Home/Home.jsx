@@ -4,8 +4,6 @@ import Title from "../../components/Title/title";
 import ContentCard from "../../components/ContentCard/ContentCard";
 
 function Home(props) {
-  // const [resources, setResources] = useState(true);
-  // const [community, setCommunity] = useState(false);
   return (
     <Layout>
       <div className="home">
