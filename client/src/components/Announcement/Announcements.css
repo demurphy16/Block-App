@@ -2,6 +2,11 @@
   background-color: rgb(252, 252, 252);
   padding: 5% 15%;
 }
+.announcements-container {
+  border: 2px solid green;
+  height: 40vh;
+  display: flex;
+}
 .announcements-content {
   display: flex;
   align-items: center;
