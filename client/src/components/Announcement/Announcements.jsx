@@ -45,9 +45,7 @@ const Announcements = () => {
   return (
     <div>
       <h2>Announcements</h2>
-      <Route exact path="/announcements/create">
-        <PostCreate/>
-        </Route>  
+      
       <Link className="create-link" to="/announcements/create">
         Make an announcement
         </Link>
