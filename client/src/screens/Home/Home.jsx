@@ -13,8 +13,8 @@ function Home(props) {
         <div className="content-container">
           <ContentCard cardType={true} />
           <ContentCard cardType={false} />
+          <Announcements />
         </div>
-        <Announcements />
       </div>
     </Layout>
   );
