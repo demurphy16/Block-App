@@ -1,6 +1,8 @@
 import React from "react";
 import Home from "../src/screens/Home/Home";
 import PostCreate from "../src/screens/PostCreate/PostCreate";
+import PostDetail from "../src/screens/PostDetail/PostDetail";
+import PostEdit from "../src/screens/PostEdit/PostEdit";
 import { Route, Switch } from "react-router-dom";
 import "./App.css";
 
@@ -10,6 +12,8 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/announcements/create" component={PostCreate} />
+        <Route exact path="/announcements/:id" component={PostDetail} />
+        <Route exact path="/announcements/:id/edit" component={PostEdit} />
       </Switch>
     </div>
   );

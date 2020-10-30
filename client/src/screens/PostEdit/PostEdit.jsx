@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 // import "./PostEdit.css";
 import { useParams, Redirect } from "react-router-dom";
-import Layout from "../../components/shared/Layout/Layout";
+import Layout from "../../components/Shared/Layout/Layout";
 import { getAnnouncement, updateAnnouncement } from "../../services/announcements";
 
 const PostEdit = (props) => {
