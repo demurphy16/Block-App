@@ -5,6 +5,15 @@ function Title(props) {
   return (
     <div>
       <h1>{title}</h1>
+
+      <form>
+        <input
+        name="Search"
+        placeholder="Explore other neighborhoods"
+        type="text"
+        />
+      </form>
+
     </div>
   )
 }
