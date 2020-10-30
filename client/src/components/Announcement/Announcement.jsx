@@ -1,6 +1,7 @@
 import React from "react";
 import "./Announcement.css";
 import { Link } from "react-router-dom";
+import Button from "../Shared/Button/Button"
 
 const Announcement = (props) => {
   return (
@@ -11,6 +12,7 @@ const Announcement = (props) => {
         <div className="announcement-title">{props.title}</div>
         <div className="announcement-content">{props.content}</div>
       </Link>
+      <Button></Button>
     </>
   );
 };
