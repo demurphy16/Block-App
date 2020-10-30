@@ -1,4 +1,5 @@
 import React from "react";
+import Announcements from "../../components/Announcement/Announcements"
 import Layout from "../../components/Shared/Layout/Layout";
 import Title from "../../components/Title/title";
 import ContentCard from "../../components/ContentCard/ContentCard";
@@ -12,6 +13,7 @@ function Home(props) {
         <Title />
         <ContentCard cardType={true} />
         <ContentCard cardType={false} />
+        <Announcements/>
       </div>
     </Layout>
   );

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom"
 // import "./Announcements.css";
 
 import Announcement from "../../components/Announcement/Announcement";
-import Layout from "../../components/shared/Layout/Layout";
 import { getAnnouncements } from "../../services/announcements";
 
 const Announcements = () => {
@@ -42,11 +42,20 @@ const Announcements = () => {
   ));
 
   return (
-    <Layout>
-      {/* <Search onSubmit={handleSubmit} onChange={handleSearch} /> */}
+    <div>
+      <h2>Announcements</h2>
+      <button>
+        <Link className="create-link" to={`/announcements/create`}>
+        Make an announcement
+        </Link>
+      </button>
       <div className="announcements">{announcementsJSX}</div>
-    </Layout>
-  );
+    </div>
+    
+  )
+  
+        {/* <Search onSubmit={handleSubmit} onChange={handleSearch} /> */}
+    
 };
 
 export default Announcements;
