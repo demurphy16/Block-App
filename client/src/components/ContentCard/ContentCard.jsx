@@ -7,6 +7,7 @@ import buildings from "../../assets/icons/buildings.svg";
 import construction from "../../assets/icons/construction.svg";
 import event from "../../assets/icons/event.svg";
 import { Link } from "react-router-dom";
+import "./ContentCard.css";
 
 function ContentCard(props) {
   return (

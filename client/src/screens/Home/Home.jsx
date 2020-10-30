@@ -8,8 +8,10 @@ function Home(props) {
     <Layout>
       <div className="home">
         <Title />
-        <ContentCard cardType={true} />
-        <ContentCard cardType={false} />
+        <div className="content-container">
+          <ContentCard cardType={true} />
+          <ContentCard cardType={false} />
+        </div>
       </div>
     </Layout>
   );
