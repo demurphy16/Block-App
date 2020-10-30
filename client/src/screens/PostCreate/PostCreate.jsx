@@ -32,10 +32,13 @@ const PostCreate = (props) => {
     return <Redirect to={`/`} />;
   }
   return (
-      <Layout user={props.user}>
+    <Layout user={props.user}>
+      <h1 className="create-title">Create Your Announcement</h1>
+      <div className="form-container">
         <form className="create-form" onSubmit={handleSubmit}>
+          <div className="input-container">
           <input
-            className="input-name"
+            className="input input-name"
             placeholder="Title"
             value={announcement.title}
             name="title"
@@ -44,8 +47,7 @@ const PostCreate = (props) => {
             onChange={handleChange}
           />
           <textarea
-            className="input-content"
-            rows={10}
+            className="input input-content"
             placeholder="Content"
             value={announcement.content}
             name="content"
@@ -53,7 +55,7 @@ const PostCreate = (props) => {
             onChange={handleChange}
           />
           <input
-            className="input-image-link"
+            className="input input-image-link"
             placeholder="Image Link"
             value={announcement.imgURL}
             name="imgURL"
@@ -61,7 +63,7 @@ const PostCreate = (props) => {
             onChange={handleChange}
           />
           <input
-            className="input-category"
+            className="input input-category"
             placeholder="Category"
             value={announcement.category}
             name="category"
@@ -69,9 +71,11 @@ const PostCreate = (props) => {
             onChange={handleChange}
           />
           <button type="submit" className="submit-button">
-            Create Announcement
+              Create Announcement
           </button>
+          </div>
         </form>
+        </div>
       </Layout>
   );
 };
