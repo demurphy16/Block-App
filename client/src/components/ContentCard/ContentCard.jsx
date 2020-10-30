@@ -1,10 +1,20 @@
 import React from "react";
+import Button from "../Shared/Button/Button";
 
 function ContentCard(props) {
   return (
-    <div>
-      <h2>Resources</h2>
-      <h3>Your Voice matters, heres where you can use it</h3>
+    <div className={(props.cardType = true ? "resources" : "community")}>
+      <h2>{(props.cardType = true ? "Resources" : "Community")}</h2>
+      <h3>
+        {
+          (props.cardType = true
+            ? "Your Voice matters, heres where you can use it."
+            : "Stay involved in your neighborhood.")
+        }
+      </h3>
+      <Button buttonType={props.cardType} />
+      <Button buttonType={props.cardType} />
+      <Button buttonType={props.cardType} />
     </div>
   );
 }
