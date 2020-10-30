@@ -1,0 +1,27 @@
+nav {
+  border: 2px solid red;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav {
+  border: 2px solid blue;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.links {
+  border: 2px solid green;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.link,
+.logo {
+  text-decoration: none;
+}
