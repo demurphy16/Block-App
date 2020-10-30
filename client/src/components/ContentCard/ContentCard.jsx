@@ -23,9 +23,7 @@ function ContentCard(props) {
           <Link to="/">
             <Button
               buttonType={props.cardType === true ? localGov : businesses}
-              buttonTitle={
-                props.cardType === true ? "Local Government" : "Businesses"
-              }
+              buttonTitle={props.cardType === true ? "Local Gov" : "Businesses"}
             />
           </Link>
           <p>
