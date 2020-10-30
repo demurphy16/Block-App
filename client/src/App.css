@@ -15,3 +15,10 @@ h6 {
 a {
   text-decoration: none;
 }
+
+:root {
+  --font-noto: "Noto Sans JP", sans-serif;
+  --font-noto-bold: "Noto Sans", sans-serif;
+  --font-merriweather: "Merriweather", serif;
+  --font-roboto: "Roboto", sans-serif;
+}

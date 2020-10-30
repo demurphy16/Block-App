@@ -1,15 +1,26 @@
 .resources {
   background-color: rgb(226, 225, 217);
 }
-
+.resources h2,
+.community h2 {
+  color: #042a2b;
+  font-family: var(--font-roboto);
+  font-weight: 900;
+  font-size: 48px;
+}
+.resources h3,
+.community h3 {
+  font-family: var(--font-merriweather);
+  color: rgb(94, 94, 94);
+}
 .community {
   background-color: rgb(245, 243, 242);
 }
 
 .resources,
 .community {
-  padding: 5% 15%;
-  margin: 15px 0;
+  padding: 4% 15% 2% 15%;
+  margin: 20px 0;
 }
 
 .button-container {
@@ -26,4 +37,12 @@
   /* justify-content: center; */
   align-items: center;
   width: 30vw;
+}
+
+.button-description {
+  font-family: var(--font-merriweather);
+  font-weight: bolder;
+  color: #042a2b;
+  font-size: 14px;
+  width: 50%;
 }
