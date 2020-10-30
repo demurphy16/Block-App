@@ -7,8 +7,10 @@ function Layout(props) {
   return (
     <div className="layout">
       <Header />
-      <div className="layout-children">{props.children}</div>
-      <Footer />
+      <div className="layout-children">
+        {props.children}
+        <Footer />
+      </div>
     </div>
   );
 }

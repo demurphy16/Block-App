@@ -1,4 +1,12 @@
+.home {
+  background-image: url("../../assets/img/titleimg.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat-y;
+  /* background-color: blue; */
+}
 .content-container {
-  background-color: lightseagreen;
+  background-color: rgba(246, 246, 246, 0.65);
   width: 100%;
+  padding: 10px 0;
 }

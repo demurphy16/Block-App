@@ -1,4 +1,5 @@
 import React from "react";
+import UserIcon from "../../../assets/icons/userIcon.svg";
 import "./Header.css";
 import { NavLink } from "react-router-dom";
 
@@ -23,7 +24,7 @@ function Header(props) {
             Hotline
           </NavLink>
           <NavLink className="user-icon" to="/">
-            icon
+            <img src={UserIcon} alt="user-icon" />
           </NavLink>
         </div>
       </div>
