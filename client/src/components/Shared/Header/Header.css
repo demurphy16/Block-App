@@ -16,6 +16,9 @@ nav {
 
 .links {
   /* border: 2px solid green; */
+  font-family: var(--font-noto);
+  font-weight: 700;
+  font-size: 24px;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -29,5 +32,8 @@ nav {
 }
 
 .logo {
-  font-size: 36px;
+  font-size: 48px;
+  font-family: var(--font-noto);
+  font-weight: 700;
+  letter-spacing: -1px;
 }

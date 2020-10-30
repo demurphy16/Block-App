@@ -1,0 +1,28 @@
+.announcements {
+  background-color: rgb(252, 252, 252);
+  padding: 5% 15%;
+}
+.announcements-container {
+  border: 2px solid green;
+  height: 40vh;
+  display: flex;
+}
+.announcements-content {
+  display: flex;
+  align-items: center;
+}
+.announcements-content h2 {
+  color: #042a2b;
+  font-family: var(--font-roboto);
+  font-weight: 900;
+  font-size: 48px;
+}
+.create-link {
+  margin-left: 30px;
+  color: #042a2b;
+  font-weight: bold;
+  border: 0.5px solid rgba(133, 133, 133, 0.5);
+  border-radius: 12.5px;
+  padding: 5px 30px;
+  box-shadow: 0px 3px 5px 0.15px rgba(0, 0, 0, 0.15);
+}
