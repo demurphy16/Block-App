@@ -6,6 +6,7 @@ function Button(props) {
     <div className="button-container">
       <div className="button-background">
         <img src={props.buttonType} alt="button-img" />
+        <p>{props.buttonTitle}</p>
       </div>
     </div>
   );
