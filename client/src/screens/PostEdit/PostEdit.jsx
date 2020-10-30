@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-// import "./PostEdit.css";
+import "./PostEdit.css"
 import { useParams, Redirect } from "react-router-dom";
 import Layout from "../../components/Shared/Layout/Layout";
 import { getAnnouncement, updateAnnouncement } from "../../services/announcements";
@@ -44,7 +44,7 @@ const PostEdit = (props) => {
 
   return (
     <Layout user={props.user}>
-      <div className="post-edit">
+      <div className="announcement-edit">
         <div className="image-container">
           <img className="edit-announcement-image" src={announcement.imgURL} alt={announcement.title} />
           <form onSubmit={handleSubmit}>
@@ -72,15 +72,15 @@ const PostEdit = (props) => {
             className="edit-textarea-content"
             rows={10}
             cols={78}
-            placeholder="content"
+            placeholder="Content"
             value={announcement.content}
             name="content"
             required
             onChange={handleChange}
           />
           <input
-            className="edit-announcement-category"
-            placeholder="Announcement Category"
+            className="edit-input-category"
+            placeholder="Category"
             value={announcement.category}
             name="category"
             required
