@@ -7,7 +7,7 @@ function Button(props) {
       <div className="button-background">
         <img src={props.buttonType} alt="button-img" />
       </div>
-      <p>{props.buttonTitle}</p>
+      <p className="button-title">{props.buttonTitle}</p>
     </div>
   );
 }

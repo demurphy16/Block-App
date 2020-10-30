@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom"
-// import "./Announcements.css";
+import { Link } from "react-router-dom";
+import "./Announcements.css";
 
 import Announcement from "../../components/Announcement/Announcement";
 import { getAnnouncements } from "../../services/announcements";
@@ -8,7 +8,6 @@ import { getAnnouncements } from "../../services/announcements";
 const Announcements = () => {
   const [setAnnouncements, setAllAnnouncements] = useState([]);
   // const [queriedPosts, setQueriedPosts] = useState([]);
- 
 
   useEffect(() => {
     const fetchAnnouncements = async () => {
@@ -18,8 +17,6 @@ const Announcements = () => {
     };
     fetchAnnouncements();
   }, []);
-
-
 
   // const handleSearch = (event) => {
   //   const newQueriedPosts = allPosts.filter((post) =>
@@ -42,18 +39,17 @@ const Announcements = () => {
   ));
 
   return (
-    <div>
-      <h2>Announcements</h2>
-      
-      <Link className="create-link" to="/announcements/create">
-        Make an announcement
+    <div className="announcements">
+      <div className="announcements-content">
+        <h2>Announcements</h2>
+        <Link className="create-link" to="/announcements/create">
+          Make an announcement
         </Link>
+      </div>
       <div className="announcements">{announcementsJSX}</div>
       {/* <Search onSubmit={handleSubmit} onChange={handleSearch} /> */}
     </div>
-  )
-  
-    
+  );
 };
 
 export default Announcements;

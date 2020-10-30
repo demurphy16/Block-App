@@ -1,5 +1,4 @@
 .button-content {
-  text-decoration: none;
   background-color: rgb(255, 255, 255);
   border-radius: 15px;
   margin: 10px;
@@ -21,10 +20,12 @@
 
 .button-content p {
   font-weight: bold;
-  font-size: 12px;
-  text-decoration: none;
-  /* padding: 1px 0; */
+  font-size: 15px;
+  color: #042a2b;
+  font-family: var(--font-roboto);
+  font-weight: 800;
 }
-.button-content a {
-  text-decoration: none;
-}
+/* .button-title {
+  color: #042a2b;
+  font-family: var(--font-merriweather);
+} */
