@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom"
+import { Link, Route } from "react-router-dom"
+import PostCreate from "../../screens/PostCreate/PostCreate"
 // import "./Announcements.css";
 
 import Announcement from "../../components/Announcement/Announcement";
@@ -44,11 +45,12 @@ const Announcements = () => {
   return (
     <div>
       <h2>Announcements</h2>
-      <button>
-        <Link className="create-link" to={`/announcements/create`}>
+      <Route exact path="/announcements/create">
+        <PostCreate/>
+        </Route>  
+      <Link className="create-link" to="/announcements/create">
         Make an announcement
         </Link>
-      </button>
       <div className="announcements">{announcementsJSX}</div>
     </div>
     
