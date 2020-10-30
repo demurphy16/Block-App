@@ -19,8 +19,8 @@
 
 .resources,
 .community {
-  padding: 4% 15%;
-  margin: 15px 0;
+  padding: 4% 15% 2% 15%;
+  margin: 20px 0;
 }
 
 .button-container {
@@ -44,4 +44,5 @@
   font-weight: bolder;
   color: #042a2b;
   font-size: 14px;
+  width: 50%;
 }
