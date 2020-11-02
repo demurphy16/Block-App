@@ -7,7 +7,9 @@ function Header(props) {
     <footer>
       <div className="nav">
         <div className="logo-container">
-          <Link className="logo-footer">block</Link>
+          <Link className="logo-footer" to="/">
+            block
+          </Link>
         </div>
         <div className="links">
           <Link className="link" to="/">
