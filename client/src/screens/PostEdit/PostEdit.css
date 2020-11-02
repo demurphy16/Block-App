@@ -87,7 +87,14 @@
   justify-content: center;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1500px) {
+  .announcement-edit {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 900px) {
   .edit-input-title {
     margin-left: -10px;
     padding-left: -10px;
@@ -100,10 +107,7 @@
     width: 100%;
     padding: 0px;
   }
-  .announcement-edit {
-    width: 100%;
-    flex-direction: column;
-  }
+
   .image-container {
     width: 100%;
   }

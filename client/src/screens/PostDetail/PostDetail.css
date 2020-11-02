@@ -2,7 +2,6 @@
   display: flex;
   padding: 100px;
   padding-top: 80px;
-  height: 80vh;
 }
 
 .detail {
@@ -32,11 +31,15 @@
   box-shadow: -8px 11px 0px 6px #ffc6a6, -9px 10px 1px 6px #000000,
     -9px 12px 1px 6px #000000, -7px 12px 1px 6px #000000;
 }
+.announcement-detail img {
+  margin: 2vh 0;
+}
 
 .detail-button-container {
   display: flex;
   justify-content: space-evenly;
   padding: 5px 10px;
+  margin-bottom: 30px;
 }
 
 .edit-button,
