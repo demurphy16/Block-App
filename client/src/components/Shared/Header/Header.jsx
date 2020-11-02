@@ -8,22 +8,22 @@ function Header(props) {
     <nav>
       <div className="nav">
         <div className="links">
-          <NavLink className="link" to="/">
+          <NavLink className="link" to="/home">
             Local Business
           </NavLink>
-          <NavLink className="link" to="/">
+          <NavLink className="link" to="/home">
             Local Government
           </NavLink>
-          <NavLink className="logo" to="/">
+          <NavLink className="logo" to="/home">
             block
           </NavLink>
-          <NavLink className="link" to="/">
+          <NavLink className="link" to="/home">
             Construction
           </NavLink>
-          <NavLink className="link" to="/">
+          <NavLink className="link" to="/home">
             Hotline
           </NavLink>
-          <NavLink className="user-icon" to="/">
+          <NavLink className="user-icon" to="/home">
             <img src={UserIcon} alt="user-icon" />
           </NavLink>
         </div>

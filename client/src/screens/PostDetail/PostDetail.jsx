@@ -30,7 +30,7 @@ const PostDetail = () => {
   };
 
   if (isDeleted) {
-    return <Redirect to={`/`} />;
+    return <Redirect to={`/home`} />;
   }
 
   return (
