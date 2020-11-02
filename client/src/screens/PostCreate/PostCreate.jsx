@@ -29,7 +29,7 @@ const PostCreate = (props) => {
   };
 
   if (isCreated) {
-    return <Redirect to={`/`} />;
+    return <Redirect to={`/home`} />;
   }
   return (
     <Layout user={props.user}>
