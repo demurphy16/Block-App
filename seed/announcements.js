@@ -1,6 +1,6 @@
 const db = require("../db/connection");
 const announcement = require("../models/announcement");
-import construction from "../client/src/assets/img/Announcements_Construction.jps";
+import construction from "../client/src/assets/img/Announcements_Construction.jpg";
 import indian from "../client/src/assets/img/indian-parade.jpeg";
 import vote from "../client/src/assets/img/Announcements_I_Voted.jpg";
 // import spanish from "../client/src/assets/img/"
