@@ -34,3 +34,13 @@
   font-family: var(--font-merriweather);
   margin-bottom: 20px;
 }
+
+@media screen and (max-width: 700px) {
+  .announcements-content {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .announcements-subheader h3 {
+    text-align: center;
+  }
+}
