@@ -46,7 +46,11 @@ const Announcements = () => {
           Make an announcement
         </Link>
       </div>
+      <div className="announcements-subheader">
+        <h3>Check out the current announcements.</h3>
+      </div>
       <div className="announcements-container">{announcementsJSX}</div>
+
       {/* <Search onSubmit={handleSubmit} onChange={handleSearch} /> */}
     </div>
   );
