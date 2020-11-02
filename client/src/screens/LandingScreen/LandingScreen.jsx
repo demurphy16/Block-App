@@ -1,10 +1,9 @@
-import React from 'react';
-import Layout from "../../components/Shared/Layout.jsx"
+import React from "react";
+import Layout from "../../components/Shared/Layout/Layout";
 
 function LandingScreen(props) {
   return (
-    <div>
-      <Layout />
+    <Layout>
       <div>
         <h1>block</h1>
         <div>
@@ -12,7 +11,7 @@ function LandingScreen(props) {
           <button>Create an Account</button>
         </div>
       </div>
-    </div>
+    </Layout>
   );
 }
 
