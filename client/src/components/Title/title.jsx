@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./title.css";
+// import crownHeights from "../../../src/assets/img/crown_heights.png"
+import search from "../../assets/icons/search.svg";
 
 function Title(props) {
   const [title, setTitle] = useState("Crown Heights");
@@ -9,6 +11,7 @@ function Title(props) {
 
       <form>
         <input
+          className="search"
           name="Search"
           placeholder="Explore other neighborhoods"
           type="text"
