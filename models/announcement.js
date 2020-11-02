@@ -7,7 +7,6 @@ const Announcement = new Schema(
     imgURL: { type: String, required: true },
     content: { type: String, required: true },
     category: { type: String, requried: true },
-    userId: { type: Schema.Types.ObjectId, ref: "users" },
   },
   { timestamps: true }
 );
