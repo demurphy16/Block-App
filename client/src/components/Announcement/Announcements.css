@@ -4,9 +4,10 @@
 }
 .announcements-container {
   /* border: 2px solid green; */
-  height: 40vh;
+  /* height: 40vh; */
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .announcements-content {
   display: flex;
