@@ -1,7 +1,12 @@
 import React from "react";
 import "./Announcement.css";
 import { Link } from "react-router-dom";
-import Button from "../Shared/Button/Button";
+import heart from "../../assets/icons/heart.svg";
+import comment from "../../assets/icons/comment.svg";
+import saveIcon from "../../assets/icons/saveicon.svg";
+import randomIcon from "../../assets/icons/randomicon.svg";
+import repost from "../../assets/icons/Repost.svg";
+// import Button from "../Shared/Button/Button";
 
 const Announcement = (props) => {
   return (
@@ -16,6 +21,13 @@ const Announcement = (props) => {
           <div className="announcement-category">{props.category}</div>
           <div className="announcement-title">{props.title}</div>
           <div className="announcement-content">{props.content}</div>
+          <div className="announcement-buttons">
+            <img src={heart} alt="heart-icon" />
+            <img src={comment} alt="comment-icon" />
+            <img src={saveIcon} alt="save-icon" />
+            <img src={randomIcon} alt="random-icon" />
+            <img src={repost} alt="repost-icon" />
+          </div>
         </Link>
         {/* <Button></Button> */}
       </div>
