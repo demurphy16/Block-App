@@ -49,18 +49,14 @@
 }
 
 .edit-input-title {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: var(--font-roboto);
   font-size: 64px;
   letter-spacing: 1px;
   padding: 5px;
 }
 
 .edit-textarea-content {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: var(--font-merriweather);
   font-size: 16px;
   padding: 10px;
   letter-spacing: 0.9px;
@@ -68,9 +64,7 @@
 }
 
 .edit-input-category {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: var(--font-roboto);
   font-size: 24px;
   letter-spacing: 1px;
   padding: 5px;
