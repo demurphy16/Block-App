@@ -48,6 +48,7 @@ const PostEdit = (props) => {
         <div className="image-container">
           <img className="edit-announcement-image" src={announcement.imgURL} alt={announcement.title} />
           <form onSubmit={handleSubmit}>
+            <label htmlFor="imgURL" className="edit-label-image">Image URL</label>
             <input
               className="edit-input-image-link"
               placeholder="Image Link"
@@ -59,6 +60,7 @@ const PostEdit = (props) => {
           </form>
         </div>
         <form className="edit-form" onSubmit={handleSubmit}>
+          <label htmlFor="title" className="edit-label">Title</label>
           <input
             className="edit-input-title"
             placeholder="Title"
@@ -68,6 +70,7 @@ const PostEdit = (props) => {
             autoFocus
             onChange={handleChange}
           />
+          <label htmlFor="content" className="edit-label">Content</label>
           <textarea
             className="edit-textarea-content"
             rows={10}
@@ -78,6 +81,7 @@ const PostEdit = (props) => {
             required
             onChange={handleChange}
           />
+          <label htmlFor="category" className="edit-label">Category</label>
           <input
             className="edit-input-category"
             placeholder="Category"
