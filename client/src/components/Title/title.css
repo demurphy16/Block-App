@@ -1,10 +1,24 @@
 .title {
+  background-image: url("../../assets/img/titleimg.jpeg");
+  background-position: center;
+  background-size: cover;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 90vh;
+  padding-top: 10vh;
+  margin-top: -10vh;
 }
+.title img {
+  /* margin-top: 60vh; */
+}
+.title form {
+  margin-top: -250px;
+  margin-bottom: 200px;
+}
+
 .search {
   color: #042a2b;
   font-weight: bold;
