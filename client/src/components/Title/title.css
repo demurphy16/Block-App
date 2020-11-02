@@ -7,7 +7,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: auto;
+  width: 100%;
   padding-top: 10vh;
   margin-top: -10vh;
 }
@@ -16,7 +17,7 @@
 }
 .title form {
   margin-top: -250px;
-  margin-bottom: 200px;
+  margin-bottom: 40%;
 }
 
 .search {
@@ -32,4 +33,15 @@
   background-size: 5%;
   background-position: bottom 7px right 12px;
   background-color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .title img {
+    border: 2px solid yellow;
+    width: 200%;
+  }
+  .title form {
+    margin-top: -40%;
+    margin-bottom: 40%;
+  }
 }
