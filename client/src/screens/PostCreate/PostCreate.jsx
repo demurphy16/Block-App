@@ -37,15 +37,33 @@ const PostCreate = (props) => {
       <div className="form-container">
         <form className="create-form" onSubmit={handleSubmit}>
           <div className="input-container">
-          <input
-            className="input input-name"
-            placeholder="Title"
-            value={announcement.title}
-            name="title"
-            required
-            autoFocus
-            onChange={handleChange}
-          />
+            <div className="title-category">
+              <input
+                className="input input-title"
+                placeholder="Title"
+                value={announcement.title}
+                name="title"
+                required
+                autoFocus
+                onChange={handleChange}
+              />
+              <div className="dropdown">
+              <label className="label-cat">Select Category:</label>
+              <select
+                className="input-category"
+                value={announcement.category}
+                name="category"
+                required
+                onChange={handleChange}>
+                <option>Construction</option>
+                <option>Event</option>
+                <option>Local Government</option>
+                <option>Resources</option>
+                <option>Neighborhood</option>
+                <option>Local Business</option>
+            </select>
+              </div>
+              </div>
           <textarea
             className="input input-content"
             placeholder="Content"
@@ -59,14 +77,6 @@ const PostCreate = (props) => {
             placeholder="Image Link"
             value={announcement.imgURL}
             name="imgURL"
-            required
-            onChange={handleChange}
-          />
-          <input
-            className="input input-category"
-            placeholder="Category"
-            value={announcement.category}
-            name="category"
             required
             onChange={handleChange}
           />
