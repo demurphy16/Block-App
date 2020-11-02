@@ -73,7 +73,7 @@
 .submit-button {
   margin-top: 4vh;
   cursor: pointer;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
   height: 3.5vh;
   width: 17.5vw;
   order: 4;
@@ -82,4 +82,18 @@
   border: none;
   box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.486);
   border-radius: 10px;
+}
+
+@media (max-width: 1000px) {
+  .title-category {
+    flex-direction: column;
+    align-items: center;
+  }
+  .submit-button {
+    min-width: 200px;
+  }
+  .dropdown {
+    display: flex;
+    flex-direction: column;
+  }
 }
