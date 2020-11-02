@@ -45,6 +45,7 @@ const Announcements = () => {
         <Link className="create-link" to="/announcements/create">
           Make an announcement
         </Link>
+        <h3 className="announcements-subheader">Your community announcements</h3>
       </div>
       <div className="announcements-subheader">
         <h3>Check out the current announcements.</h3>
