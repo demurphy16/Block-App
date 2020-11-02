@@ -7,27 +7,27 @@ function Header(props) {
     <footer>
       <div className="nav">
         <div className="logo-container">
-          <Link className="logo-footer" to="/">
+          <Link className="logo-footer" to="/home">
             block
           </Link>
         </div>
         <div className="links">
-          <Link className="link" to="/">
+          <Link className="link" to="/home">
             Local Business
           </Link>
-          <Link className="link" to="/">
+          <Link className="link" to="/home">
             Local Government
           </Link>
-          <Link className="link" to="/">
+          <Link className="link" to="/home">
             Local Events
           </Link>
-          <Link className="link" to="/">
+          <Link className="link" to="/home">
             Crown Heights Info
           </Link>
-          <Link className="link" to="/">
+          <Link className="link" to="/home">
             About
           </Link>
-          <Link className="link" to="/">
+          <Link className="link" to="/home">
             Need Help?
           </Link>
         </div>
