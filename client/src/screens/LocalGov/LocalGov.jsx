@@ -63,6 +63,9 @@ function LocalGov() {
             </p>
           </div>
         </div>
+        <div className="mayor">
+        </div>
+        <div className="carrossel"></div>
       </div>
     </Layout>
   )

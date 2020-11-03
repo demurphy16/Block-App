@@ -1,3 +1,6 @@
+body {
+  height: 100vh;
+}
 .page-container {
   height: 100vh;
 }
@@ -7,7 +10,7 @@
   color: rgba(4, 42, 43, 4.3);
   font-family: var(--font-noto);
   font-weight: 900;
-  margin-bottom: 3vh;
+  margin: 2vh;
 }
 
 .gov-form {
@@ -63,6 +66,7 @@
   background-color: white;
   margin: 3vh 0;
   box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.486);
+  max-width: 562px;
 }
 .rep1 {
   /* border: 1px solid yellow; */
@@ -107,3 +111,13 @@
   /* border: 1px solid blue; */
   font-family: var(--font-noto);
 }
+
+.mayor {
+  border: 1px solid black;
+  height: 35vh;
+  margin-bottom: 5vh;
+}
+/* .carrossel {
+  border: 1px solid red;
+  height: 25vh;
+} */
