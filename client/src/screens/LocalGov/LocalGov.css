@@ -52,8 +52,8 @@
 .rep-container {
   display: flex;
   justify-content: space-around;
-  border: 1px solid red;
-  height: 30vh;
+  /* border: 1px solid red; */
+  height: 35vh;
   background-color: rgb(173, 186, 183);
   margin-top: 5vh;
 }
@@ -62,28 +62,36 @@
   width: 45vw;
   background-color: white;
   margin: 3vh 0;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.486);
 }
 .rep1 {
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
+  font-family: var(--font-noto);
 }
 .info-container {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   padding: 5px;
+  font-size: 14px;
 }
-.nydia {
+.rep-img {
   border-radius: 150px;
   height: 13vh;
   margin-left: 1vw;
 }
 .rep-description {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   text-align: center;
   width: 88vw;
   line-height: 3vh;
   padding: 5px;
+  font-size: 12px;
+  margin: auto 0;
+}
+.district {
+  font-size: 13px;
 }
 .rep-button {
   font-weight: bold;
@@ -92,7 +100,10 @@
   border: none;
   border-radius: 20px;
   margin: 0 4px;
+  font-size: 11px;
+  cursor: pointer;
 }
 .rep2 {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
+  font-family: var(--font-noto);
 }
