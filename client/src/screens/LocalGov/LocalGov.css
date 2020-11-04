@@ -50,6 +50,7 @@ body {
   min-width: 105px;
   height: 37px;
   margin: 1vh 2vw;
+  cursor: pointer;
 }
 
 .rep-container {
