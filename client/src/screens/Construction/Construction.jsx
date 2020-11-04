@@ -17,6 +17,7 @@ function Construction(props) {
       <div className="construction-top">
         <div className="header-map">
           <img src={map} alt="map-crown-heights" className="header-map-img" />
+          <h5 className="view-map">View Map</h5>
         </div>
         <div className="title-map">
           <h2 className="construction-title">Construction</h2>
@@ -30,6 +31,11 @@ function Construction(props) {
           </form>
         </div>
       </div>
+      <div className="construction-middle-text">
+        <h3>0 Construction Sites</h3>
+        <p>Sort by: <strong>Date</strong></p>
+      </div>
+      <hr />
     </Layout>
   )
 }
