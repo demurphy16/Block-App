@@ -1,11 +1,10 @@
 .construction-top {
-  border: solid 2px red;
   display: flex;
   flex-direction: row;
+  margin-bottom: 20px;
 }
 
 .construction-top-text {
-  border: solid 2px yellow;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -18,21 +17,27 @@
 
 .header-map {
   display: flex;
-  border: solid 2px orange;
+  flex-direction: column;
   margin-right: 10%;
   margin-left: 5%;
 }
 
+.view-map {
+  background-color: #042a2b;
+  color: #ffffff;
+  width: 63.7%;
+  text-align: center;
+  margin-left: 1.6%;
+}
+
 .header-map-img {
   display: flex;
-  border: solid 2px blue;
-  width: 66.7%;
+  width: 67%;
   height: auto;
-  padding: 10px;
+  padding: 10px 10px 0 10px;
 }
 
 .link-to-home {
-  border: solid 2px blue;
   display: flex;
   flex-direction: row;
 }
@@ -48,7 +53,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 10%;
+  margin-left: 4%;
 }
 
 .construction-title {
@@ -72,4 +77,20 @@
   background-size: 5%;
   background-position: bottom 7px left 12px;
   background-color: white;
+}
+
+.construction-middle-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 2%;
+}
+
+.construction-middle-text p {
+  font-weight: 20%;
+}
+
+hr {
+  width: 95vw;
+  margin-bottom: 25px;
 }
