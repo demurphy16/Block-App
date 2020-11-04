@@ -8,7 +8,7 @@ function Header(props) {
     <nav>
       <div className="nav">
         <div className="links">
-          <NavLink className="link" to="/home">
+          <NavLink className="link" to="/businesses">
             Local Business
           </NavLink>
           <NavLink className="link" to="/home">
@@ -17,7 +17,7 @@ function Header(props) {
           <NavLink className="logo" to="/home">
             block
           </NavLink>
-          <NavLink className="link" to="/home">
+          <NavLink className="link" to="/construction">
             Construction
           </NavLink>
           <NavLink className="link" to="/home">
