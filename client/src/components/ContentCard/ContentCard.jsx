@@ -20,7 +20,7 @@ function ContentCard(props) {
       </h3>
       <div className="button-container">
         <div className="button">
-          <Link to="/localgov">
+          <Link to={props.cardType === true ? "/localgov" : "/businesses"}>
             <Button
               buttonType={props.cardType === true ? localGov : businesses}
               buttonTitle={props.cardType === true ? "Local Gov" : "Businesses"}
@@ -46,7 +46,7 @@ function ContentCard(props) {
           </p>
         </div>
         <div className="button">
-          <Link to="/">
+          <Link to={props.cardType === true ? "/construction" : "/"}>
             <Button
               buttonType={props.cardType === true ? construction : event}
               buttonTitle={props.cardType === true ? "Construction" : "Events"}
