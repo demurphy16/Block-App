@@ -1,6 +1,7 @@
 import React from "react";
 import LandingScreen from "../src/screens/LandingScreen/LandingScreen"
 import Home from "../src/screens/Home/Home";
+import LocalGov from "../src/screens/LocalGov/LocalGov"
 import PostCreate from "../src/screens/PostCreate/PostCreate";
 import PostDetail from "../src/screens/PostDetail/PostDetail";
 import PostEdit from "../src/screens/PostEdit/PostEdit";
@@ -16,6 +17,7 @@ function App() {
         <Route exact path="/announcements/create" component={PostCreate} />
         <Route exact path="/announcements/:id" component={PostDetail} />
         <Route exact path="/announcements/:id/edit" component={PostEdit} />
+        <Route exact path="/localgov" component={LocalGov} />
       </Switch>
     </div>
   );
