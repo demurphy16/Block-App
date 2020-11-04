@@ -4,9 +4,10 @@ import "./Header.css";
 import { NavLink } from "react-router-dom";
 
 function Header(props) {
+  const { signIn } = props;
   return (
     <nav>
-      <div className="nav">
+      <div className={signIn === false ? "sign-in-nav" : "nav"}>
         <div className="links">
           <NavLink className="link" to="/businesses">
             Local Business
