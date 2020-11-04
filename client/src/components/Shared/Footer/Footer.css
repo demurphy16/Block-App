@@ -6,6 +6,17 @@ footer {
   align-items: center;
   padding: 15px 0;
 }
+.sign-in-footer {
+  z-index: 1000;
+  position: absolute;
+  bottom: 3vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .logo-footer {
   font-family: var(--font-noto);
   font-weight: 700;
