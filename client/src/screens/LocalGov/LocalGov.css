@@ -3,6 +3,8 @@ body {
 }
 .page-container {
   height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .gov-title {
@@ -118,7 +120,7 @@ body {
   height: 35vh;
   margin-bottom: 5vh;
 }
-/* .carrossel {
+.carrossel {
   border: 1px solid red;
   height: 25vh;
-} */
+}

@@ -7,6 +7,9 @@ footer {
   padding: 15px 0;
 }
 .logo-footer {
+  font-family: var(--font-noto);
+  font-weight: 700;
+  letter-spacing: -1px;
   text-decoration: none;
   color: white;
   font-size: 24px;

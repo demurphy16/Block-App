@@ -18,17 +18,21 @@ nav {
   /* border: 2px solid green; */
   font-family: var(--font-noto);
   font-weight: 700;
-  font-size: 24px;
+  font-size: 18px;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-
 .link,
 .logo {
   color: white;
   text-decoration: none;
+  transition: opacity 0.2s ease-in-out;
+}
+.link:hover,
+.logo:hover {
+  opacity: 50%;
 }
 
 .logo {
