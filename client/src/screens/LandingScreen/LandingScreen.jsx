@@ -7,9 +7,9 @@ function LandingScreen(props) {
     <Layout>
       <div className="landing-screen-container">
         <h1 className="landing-screen-logo">block</h1>
-        <div>
-          <button>Sign In</button>
-          <button>Create an Account</button>
+        <div className="landing-screen-portal">
+          <button className="landing-screen-sign-in">Sign In</button>
+          <button className="landing-screen-account">Create an Account</button>
         </div>
       </div>
     </Layout>
