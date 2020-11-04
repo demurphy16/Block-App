@@ -12,7 +12,7 @@ function Header(props) {
           </Link>
         </div>
         <div className="links">
-          <Link className="link" to="/home">
+          <Link className="link" to="/businesses">
             Local Business
           </Link>
           <Link className="link" to="/home">
