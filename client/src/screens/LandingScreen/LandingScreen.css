@@ -1,0 +1,19 @@
+.landing-screen-container {
+  border: 2px solid red;
+  position: absolute;
+  margin-top: -10vh;
+  margin-bottom: 10vh;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* .landing-screen-content {
+  border: 2px solid yellow;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
