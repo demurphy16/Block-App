@@ -70,6 +70,7 @@ body {
   margin: 3vh 0;
   box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.486);
   max-width: 562px;
+  background-color: rgb(242, 242, 242);
 }
 .rep1 {
   /* border: 1px solid yellow; */
@@ -84,7 +85,7 @@ body {
   font-size: 14px;
 }
 .rep-img {
-  border-radius: 150px;
+  border-radius: 50%;
   height: 13vh;
   margin-left: 1vw;
 }
@@ -116,11 +117,8 @@ body {
 }
 
 .mayor {
+  /* display: flex; */
+  /* flex-direction: row; */
   border: 1px solid black;
   height: 35vh;
-  margin-bottom: 5vh;
-}
-.carrossel {
-  border: 1px solid red;
-  height: 25vh;
 }

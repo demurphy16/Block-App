@@ -33,7 +33,7 @@ function ContentCard(props) {
           </p>
         </div>
         <div className="button">
-          <Link to="/">
+          <Link to="/hotline">
             <Button
               buttonType={props.cardType === true ? hotline : buildings}
               buttonTitle={props.cardType === true ? "Hotline" : "Brooklyn"}
