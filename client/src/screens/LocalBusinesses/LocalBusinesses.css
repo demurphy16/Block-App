@@ -86,3 +86,98 @@
   justify-content: center;
   margin-bottom: 5%;
 }
+
+.popular {
+  display: flex;
+  flex-direction: row;
+}
+
+.business-title-popular {
+  font-size: 40px;
+  color: #042a2b;
+  margin-bottom: 1%;
+  font-family: var(--font-noto);
+  font-weight: bolder;
+  margin-left: 5%;
+}
+
+.popular-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #d6e1e8;
+  border-radius: 5%;
+  width: 30vw;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  border-radius: 5px;
+  padding: 2%;
+  font-family: "Merriweather", sans-serif;
+}
+
+.popular-image {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-self: center;
+  border-radius: 5%;
+  margin-bottom: 3px;
+}
+
+.popular-name-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1%;
+}
+
+.popular-name {
+  font-size: 1.3em;
+  letter-spacing: 1px;
+  color: #042a2b;
+}
+
+.popular-icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.email-icon {
+  margin-right: 1px;
+}
+
+.phone-icon {
+  margin-left: 1px;
+}
+
+.popular-first-line {
+  font-size: 14px;
+  color: #042a2b;
+  margin: 10px 0;
+}
+
+.popular-second-line {
+  color: gray;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.see-more-button {
+  background-color: #ffffff;
+  color: #042a2b;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #042a2b;
+  box-sizing: border-box;
+  border-radius: 3px;
+  font-weight: bold;
+  width: 50%;
+  transition: all 0.1s;
+  height: 10%;
+  margin: 2% auto;
+}
+
+.see-more-button:hover {
+  color: #ffffff;
+  background-color: #042a2b;
+  cursor: pointer;
+}

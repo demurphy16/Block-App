@@ -2,10 +2,15 @@ import React from "react"
 import Button from "../../components/Shared/Button/Button"
 import Layout from "../../components/Shared/Layout/Layout"
 import arrow from "../../assets/icons/noun_Left_1920775.png"
+import bakery from "../../assets/img/German_s Soup.png"
 import bars from "../../assets/icons/bars.svg"
 import beauty from "../../assets/icons/beauty.svg"
+import fish from "../../assets/img/Local Business Page_Bed-Stuy.png"
 import groceries from "../../assets/icons/groceries.svg"
 import health from "../../assets/icons/health.svg"
+import lobster from "../../assets/img/Local Restaurants_Crabby Shack.png"
+import mail from "../../assets/icons/mail.svg"
+import phone from "../../assets/icons/phone.svg"
 import restaurants from "../../assets/icons/restaurants.svg"
 import retail from "../../assets/icons/businesses.svg"
 import "../LocalBusinesses/LocalBusinesses.css"
@@ -41,6 +46,48 @@ function LocalBusinesses(props) {
         <Button buttonType={groceries} buttonTitle="Groceries" />
         <Button buttonType={retail} buttonTitle="Retail" />
         <Button buttonType={beauty} buttonTitle="Beauty" />
+      </div>
+      <h2 className="business-title-popular">Popular Near You</h2>
+      <div className="popular">
+        <div className="popular-container">
+          <img src={bakery} alt="german-beer-garden" className="popular-image" />
+          <div className="popular-name-icons">
+            <h3 className="popular-name">German's Soup</h3>
+            <div className="popular-icons">
+              <img src={mail} alt="email-icon" className="email-icon"/>
+              <img src={phone} alt="phone-icon" className="phone-icon"/>
+            </div>
+          </div>
+          <p className="popular-first-line">410 Utica Ave, Brooklyn, NY 11213</p>
+          <p className="popular-second-line">Guyanese | Hours: 9AM-8PM</p>
+          <button type="submit" className="see-more-button">See More</button>
+        </div>
+        <div className="popular-container">
+          <img src={fish} alt="fish-fry" className="popular-image" />
+          <div className="popular-name-icons">
+            <h3 className="popular-name">Bed-Stuy Fish Fry</h3>
+            <div className="popular-icons">
+              <img src={mail} alt="email-icon" className="email-icon"/>
+              <img src={phone} alt="phone-icon" className="phone-icon"/>
+            </div>
+          </div>
+          <p className="popular-first-line">827 Nostrand Ave, Brooklyn, NY 11225</p>
+          <p className="popular-second-line">Soul Food | Hours: 9AM-8PM</p>
+          <button type="submit" className="see-more-button">See More</button>
+        </div>
+        <div className="popular-container">
+          <img src={lobster} alt="fish-fry" className="popular-image" />
+          <div className="popular-name-icons">
+            <h3 className="popular-name">The Crabby Shack</h3>
+            <div className="popular-icons">
+              <img src={mail} alt="email-icon" className="email-icon"/>
+              <img src={phone} alt="phone-icon" className="phone-icon"/>
+            </div>
+          </div>
+          <p className="popular-first-line">613 Franklin Ave, Brooklyn, NY 11238</p>
+          <p className="popular-second-line">Seafood | Hours: 12PM-10PM</p>
+          <button type="submit" className="see-more-button">See More</button>
+        </div>
       </div>
     </Layout>
   )
