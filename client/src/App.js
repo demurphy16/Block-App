@@ -1,6 +1,7 @@
 import React from "react";
 import Construction from "../src/screens/Construction/Construction";
 import LandingScreen from "../src/screens/LandingScreen/LandingScreen";
+import SignIn from "../src/screens/SignIn/SignIn";
 import LocalBusinesses from "../src/screens/LocalBusinesses/LocalBusinesses";
 import Home from "../src/screens/Home/Home";
 import LocalGov from "../src/screens/LocalGov/LocalGov"
@@ -15,6 +16,7 @@ function App() {
     <div className="App">
       <Switch>
         <Route exact path="/" component={LandingScreen} />
+        <Route exact path="/sign-in" component={SignIn} />
         <Route exact path="/home" component={Home} />
         <Route exact path="/construction" component={Construction} />
         <Route exact path="/businesses" component={LocalBusinesses} />
