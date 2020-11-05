@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "../CreateAccount/CreateAccount.css";
 
 function CreateAccount(props) {
-  const { signIn, setSignIn } = props;
+  const { signIn, setSignIn, user, setUser } = props;
   return (
     <div className="create-account-container">
       <div className="create-account-image"></div>

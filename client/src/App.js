@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Construction from "../src/screens/Construction/Construction";
 import LandingScreen from "../src/screens/LandingScreen/LandingScreen";
 import LocalBusinesses from "../src/screens/LocalBusinesses/LocalBusinesses";
@@ -11,12 +11,27 @@ import PostEdit from "../src/screens/PostEdit/PostEdit";
 import CreateAccount from "../src/screens/CreateAccount/CreateAccount";
 import Login from "../src/screens/Login/Login";
 import Layout from "../src/components/Shared/Layout/Layout";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 import "./App.css";
 
 
 function App() {
   const [signIn, setSignIn] = useState(false);
+  const [user, setUser] = useState(null);
+
+  function handleSetUser(user) {
+    setUser(user);
+    localStorage.setItem("user", user);
+  } // passed as a prop in Create Account
+
+  function checkStorage() {
+    const user = localStorage.getItem("user");
+    user ? setUser(user) : setUser(null);
+  } // call as a use Effect []
+
+  useEffect(() => {
+    checkStorage();
+  }, []);
 
   return (
     <Layout signIn={signIn} setSignIn={setSignIn}>
@@ -26,14 +41,23 @@ function App() {
             <LandingScreen />
           </Route>
           <Route exact path="/create-account">
-            <CreateAccount signIn={signIn} setSignIn={setSignIn} />
+            <CreateAccount
+              signIn={signIn}
+              setSignIn={setSignIn}
+              user={user}
+              setUser={handleSetUser}
+            />
           </Route>
           <Route exact path="/login">
             <Login signIn={signIn} setSignIn={setSignIn} />
           </Route>
-          <Route exact path="/home">
-            <Home signIn={signIn} setSignIn={setSignIn} />
-          </Route>
+          {user ? (
+            <Route exact path="/home">
+              <Home signIn={signIn} setSignIn={setSignIn} />
+            </Route>
+          ) : (
+            <Redirect to="/create-account" />
+          )}
           <Route exact path="/construction" component={Construction} />
           <Route exact path="/businesses" component={LocalBusinesses} />
           <Route exact path="/announcements/create" component={PostCreate} />
