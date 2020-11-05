@@ -21,6 +21,7 @@
   border-radius: 100%;
   padding: 10px;
   margin-bottom: 10px;
+  object-fit: cover;
 }
 
 .button-content p {
@@ -32,9 +33,9 @@
 }
 
 .button-background img {
-  /* object-fit: cover; */
-  width: 40px;
-  height: 40px;
+  /* border: 2px solid red; */
+  width: 45px;
+  height: 45px;
 }
 /* .button-title {
   color: #042a2b;
