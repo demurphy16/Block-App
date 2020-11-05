@@ -1,5 +1,5 @@
 .landing-screen-container {
-  background: linear-gradient(rgba(4, 42, 43, 0.75), rgba(4, 42, 43, 0.75)),
+  background: linear-gradient(rgba(4, 42, 43, 0.5), rgba(4, 42, 43, 0.5)),
     url("https://images.unsplash.com/photo-1512749355846-eb142b5cc4a5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80")
       no-repeat center center;
   background-size: cover;
@@ -26,17 +26,22 @@
   padding-top: 10px;
   width: 500px;
   display: flex;
-  justify-content: space-between;
 }
 
+.landing-screen-portal a,
 .landing-screen-portal button {
   font-family: var(--font-merriweather);
   font-weight: 900;
-  width: 45%;
+  width: 90%;
   padding: 15px 0;
   border-radius: 8px;
   border: none;
   transition: opacity 0.2s ease-in-out;
+}
+
+.landing-screen-portal a {
+  display: flex;
+  justify-content: center;
 }
 
 .landing-screen-portal button:hover {

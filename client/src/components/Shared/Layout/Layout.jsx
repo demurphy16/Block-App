@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import "./Layout.css";
 
 function Layout(props) {
-  const [signIn, setSignIn] = useState(false);
+  const { signIn } = props;
 
   return (
     <div className="layout">

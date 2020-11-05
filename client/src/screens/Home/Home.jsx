@@ -5,7 +5,6 @@ import Title from "../../components/Title/title";
 import ContentCard from "../../components/ContentCard/ContentCard";
 import "./Home.css";
 
-
 function Home(props) {
   return (
     <Layout>
