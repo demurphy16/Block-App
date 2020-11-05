@@ -1,0 +1,97 @@
+.hotline-container {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.hotline-header {
+  display: flex;
+  align-items: center;
+  height: 25vh;
+  background-color: rgba(4, 42, 43, 4.3);
+}
+.header-text-container {
+  margin-top: 5vh;
+  margin-left: 15vw;
+}
+.header-text-container > h2 {
+  color: white;
+  font-size: 35px;
+  font-family: sans-serif;
+}
+.header-text-container > p {
+  color: white;
+  font-family: var(--font-noto);
+}
+
+.white-space {
+  height: 7vh;
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: space-between;
+}
+.grey-text {
+  color: grey;
+  font-weight: 700;
+  padding-top: 1.2vh;
+  font-size: 12px;
+  margin: 0 4vh;
+}
+.back-to-home {
+  padding-top: 1.2vh;
+  font-size: 12px;
+  margin: 0 4vh;
+  text-decoration: underline;
+  color: rgba(4, 42, 43, 4.3);
+  font-weight: 700;
+}
+
+.contact-div {
+  height: 65vh;
+  /* border: 1px solid red; */
+  background-color: rgba(227, 223, 209, 0.913)
+}
+.contact-div > h2 {
+  font-size: 30px;
+  font-family: var(--font-noto);
+  margin-left: 7vw;
+  font-weight: 800;
+  padding-top: 2vh;
+  margin-bottom: 2vh;
+}
+.underlines {
+  height: 13vh;
+  width:40vw;
+  text-decoration: underline;
+  margin-left: 7vw;
+  font-family: var(--font-noto);
+  font-weight: 550;
+
+  margin-bottom: 0%;
+}
+.complaints > p {
+  margin-bottom: 2vh;
+}
+.local-gov > p {
+  margin-bottom: 2vh;
+}
+.local-corporations {
+  height: 10vh;
+}
+.emergency-services > h2 {
+  margin-left: 7vw;
+  font-size: 30px;
+  font-family: var(--font-noto);
+  font-weight: 800;
+  padding-top: 2vh;
+  margin-bottom: 2vh;
+}
+.emer-servs {
+  margin-left: 7vw;
+  text-decoration: underline;
+  margin-bottom: 2vh;
+  font-family: var(--font-noto);
+}
+.last {
+  padding-bottom: 7vh;
+}
