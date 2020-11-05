@@ -34,3 +34,7 @@
   color: #042a2b;
   font-family: var(--font-merriweather);
 } */
+
+.button-background img {
+  object-fit: cover;
+}

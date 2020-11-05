@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Layout from "../../components/Shared/Layout/Layout";
 import "../Login/Login.css";
 
@@ -20,7 +21,9 @@ function Login(props) {
             <p>Forgot Password?</p>
           </div>
           <div className="login-button-container">
-            <button>Login</button>
+            <Link to="/home">
+              <button>Login</button>
+            </Link>
           </div>
         </div>
       </div>
