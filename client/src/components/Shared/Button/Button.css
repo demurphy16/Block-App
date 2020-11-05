@@ -30,6 +30,12 @@
   font-family: var(--font-roboto);
   font-weight: 800;
 }
+
+.button-background img {
+  /* object-fit: cover; */
+  width: 40px;
+  height: 40px;
+}
 /* .button-title {
   color: #042a2b;
   font-family: var(--font-merriweather);
