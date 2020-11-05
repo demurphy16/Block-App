@@ -1,5 +1,5 @@
 const db = require("../db/connection");
-const user = require("../models/users");
+const user = require("../models/user");
 
 db.on("error", console.error.bind(console, "MongoDB connection error:"));
 
@@ -10,7 +10,7 @@ const main = async () => {
     lastName: "Ferris",
     emailAddress: "AppleHutCEO@AppleHut.com",
     cityTown: "Cupertino",
-    state: "CA",
+    state: "  CA",
     password: "TigerKingIsMyKing",
     },
   ];
