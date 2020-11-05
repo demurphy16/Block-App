@@ -123,3 +123,19 @@
   text-decoration: underline solid rgba(0, 0, 255, 0.75);
   font-weight: 800;
 }
+
+@media (max-width: 900px) {
+  .create-account-image {
+    display: none;
+  }
+  .create-account-content {
+    margin: 0 auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+  }
+  .create-account-name,
+  .create-account-address {
+    flex-direction: column;
+  }
+}
