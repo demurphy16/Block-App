@@ -1,17 +1,18 @@
-import React from "react"
-import Layout from "../../components/Shared/Layout/Layout"
-import map from "../../assets/img/map_image.png"
-import arrow from "../../assets/icons/noun_Left_1920775.png"
-import "../Construction/Construction.css"
+import React from "react";
+import map from "../../assets/img/map_image.png";
+import arrow from "../../assets/icons/noun_Left_1920775.png";
+import "../Construction/Construction.css";
 
 function Construction(props) {
   return (
-    <Layout>
+    <div>
       <div className="construction-top-text">
         <h5>Home/Construction</h5>
         <div className="link-to-home">
           <img src={arrow} alt="left-arrow" className="left-arrow" />
-          <h4><a href={`/home`}>Back to Homepage</a></h4>
+          <h4>
+            <a href={`/home`}>Back to Homepage</a>
+          </h4>
         </div>
       </div>
       <div className="construction-top">
@@ -33,11 +34,13 @@ function Construction(props) {
       </div>
       <div className="construction-middle-text">
         <h3>0 Construction Sites</h3>
-        <p>Sort by: <strong>Date</strong></p>
+        <p>
+          Sort by: <strong>Date</strong>
+        </p>
       </div>
       <hr />
-    </Layout>
-  )
+    </div>
+  );
 }
 
-export default Construction
+export default Construction;

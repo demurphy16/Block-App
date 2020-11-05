@@ -1,15 +1,17 @@
 import React, { useState, useEffect } from "react";
-import "./PostEdit.css"
+import "./PostEdit.css";
 import { useParams, Redirect } from "react-router-dom";
-import Layout from "../../components/Shared/Layout/Layout";
-import { getAnnouncement, updateAnnouncement } from "../../services/announcements";
+import {
+  getAnnouncement,
+  updateAnnouncement,
+} from "../../services/announcements";
 
 const PostEdit = (props) => {
   const [announcement, setAnnouncement] = useState({
     title: "",
     imgURL: "",
     content: "",
-    category:""
+    category: "",
   });
 
   const [isUpdated, setUpdated] = useState(false);
@@ -43,12 +45,18 @@ const PostEdit = (props) => {
   }
 
   return (
-    <Layout user={props.user}>
+    <div user={props.user}>
       <div className="announcement-edit">
         <div className="image-container">
-          <img className="edit-announcement-image" src={announcement.imgURL} alt={announcement.title} />
+          <img
+            className="edit-announcement-image"
+            src={announcement.imgURL}
+            alt={announcement.title}
+          />
           <form onSubmit={handleSubmit}>
-            <label htmlFor="imgURL" className="edit-label-image">Image URL</label>
+            <label htmlFor="imgURL" className="edit-label-image">
+              Image URL
+            </label>
             <input
               className="edit-input-image-link"
               placeholder="Image Link"
@@ -60,7 +68,9 @@ const PostEdit = (props) => {
           </form>
         </div>
         <form className="edit-form" onSubmit={handleSubmit}>
-          <label htmlFor="title" className="edit-label">Title</label>
+          <label htmlFor="title" className="edit-label">
+            Title
+          </label>
           <input
             className="edit-input-title"
             placeholder="Title"
@@ -70,7 +80,9 @@ const PostEdit = (props) => {
             autoFocus
             onChange={handleChange}
           />
-          <label htmlFor="content" className="edit-label">Content</label>
+          <label htmlFor="content" className="edit-label">
+            Content
+          </label>
           <textarea
             className="edit-textarea-content"
             rows={10}
@@ -81,7 +93,9 @@ const PostEdit = (props) => {
             required
             onChange={handleChange}
           />
-          <label htmlFor="category" className="edit-label">Category</label>
+          <label htmlFor="category" className="edit-label">
+            Category
+          </label>
           <input
             className="edit-input-category"
             placeholder="Category"
@@ -95,7 +109,7 @@ const PostEdit = (props) => {
           </button>
         </form>
       </div>
-    </Layout>
+    </div>
   );
 };
 
