@@ -3,6 +3,7 @@ import Layout from "../../components/Shared/Layout/Layout"
 import "./LocalGov.css"
 import Nydia from "../../assets/img/nydia.jpeg";
 import Hakeem from "../../assets/img/hakeem.png";
+import Mayors from './MayorCards/Mayors'
 
 function LocalGov() {
 
@@ -64,8 +65,9 @@ function LocalGov() {
           </div>
         </div>
         <div className="mayor">
+          <Mayors />
         </div>
-        <div className="carrossel"></div>
+        
       </div>
     </Layout>
   )
