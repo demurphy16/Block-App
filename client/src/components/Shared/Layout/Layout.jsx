@@ -4,12 +4,14 @@ import Footer from "../Footer/Footer";
 import "./Layout.css";
 
 function Layout(props) {
+  const { signIn } = props;
+
   return (
     <div className="layout">
-      <Header />
+      <Header signIn={signIn} />
       <div className="layout-children">
         {props.children}
-        <Footer />
+        <Footer signIn={signIn} />
       </div>
     </div>
   );

@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
-import "./PostDetail.css"
-import Layout from "../../components/Shared/Layout/Layout";
-import { getAnnouncement, deleteAnnouncement } from "../../services/announcements";
+import "./PostDetail.css";
+import {
+  getAnnouncement,
+  deleteAnnouncement,
+} from "../../services/announcements";
 import { useParams, Link, Redirect } from "react-router-dom";
 
 const PostDetail = () => {
@@ -34,28 +36,30 @@ const PostDetail = () => {
   }
 
   return (
-    <Layout>
-      <div className="announcement-detail">
-        <img className="announcement-detail-image" src={announcement.imgURL} alt={announcement.title} />
-        <div className="detail">
-          <div className="detail-title">{announcement.title}</div>
-          <div className="detail-content">{announcement.content}</div>
-          <div className="detail-button-container">
-            <button className="edit-button">
-              <Link className="edit-link" to={`/announcements/${announcement._id}/edit`}>
-                Edit
-              </Link>
-            </button>
-            <button
-              className="delete-button"
-              onClick={handleSubmit}
+    <div className="announcement-detail">
+      <img
+        className="announcement-detail-image"
+        src={announcement.imgURL}
+        alt={announcement.title}
+      />
+      <div className="detail">
+        <div className="detail-title">{announcement.title}</div>
+        <div className="detail-content">{announcement.content}</div>
+        <div className="detail-button-container">
+          <button className="edit-button">
+            <Link
+              className="edit-link"
+              to={`/announcements/${announcement._id}/edit`}
             >
-              Delete
-            </button>
-          </div>
+              Edit
+            </Link>
+          </button>
+          <button className="delete-button" onClick={handleSubmit}>
+            Delete
+          </button>
         </div>
       </div>
-    </Layout>
+    </div>
   );
 };
 

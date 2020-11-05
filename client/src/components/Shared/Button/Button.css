@@ -10,12 +10,18 @@
   justify-content: center;
   align-items: center;
   box-shadow: 0px 3px 5px 0.15px rgba(0, 0, 0, 0.15);
+  transition: scale 0.5s ease-in-out;
 }
+.button-content:hover {
+  transform: scale(1.1);
+}
+
 .button-background {
   background-color: #ffc6a6;
   border-radius: 100%;
   padding: 10px;
   margin-bottom: 10px;
+  object-fit: cover;
 }
 
 .button-content p {
@@ -25,7 +31,17 @@
   font-family: var(--font-roboto);
   font-weight: 800;
 }
+
+.button-background img {
+  /* border: 2px solid red; */
+  width: 45px;
+  height: 45px;
+}
 /* .button-title {
   color: #042a2b;
   font-family: var(--font-merriweather);
 } */
+
+.button-background img {
+  object-fit: cover;
+}

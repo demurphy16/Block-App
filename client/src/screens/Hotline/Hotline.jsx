@@ -1,16 +1,14 @@
 import { Link } from 'react-router-dom'
-import Layout from '../../components/Shared/Layout/Layout'
 import './Hotline.css'
 
 function Hotline() {
 
 
   return (
-    <Layout>
+
       <div className="hotline-container">
         <div className="hotline-header">
           <div className="header-text-container">
-          {/* <img src={hotline} alt="hotline icon"/> */}
           <h2>Community Hotline</h2>
           <p>Experiencing disruptions?</p>
           </div>
@@ -46,7 +44,7 @@ function Hotline() {
           <p className="emer-servs last">Overdose Hotline (000-000-0000)</p>
         </div>
       </div>
-    </Layout>
+
   )
 }
 

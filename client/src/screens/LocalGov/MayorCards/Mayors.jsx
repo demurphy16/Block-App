@@ -24,7 +24,7 @@ function MayorCards() {
         </div>
         </div>
         <div className="neil-container mayors">
-          <img className="mayor-img"src={tyler}/>
+          <img className="mayor-img"src={tyler} alt="tyler"/>
           <h4 className="mayor-name">Tyler Hartrich</h4>
           <p className="mayor-title">Mayor, General Assembly</p>
           <p className="mayor-description">Tyler Loves trees, he believes that GA should go completely
@@ -36,7 +36,7 @@ function MayorCards() {
         </div>
         </div>
         <div className="tyler-container mayors">
-          <img className="mayor-img" src={neil}/>
+          <img className="mayor-img" src={neil} alt="neil"/>
           <h4 className="mayor-name">Neil Kahn</h4>
           <p className="mayor-title">Mayor, General Assembly</p>
           <p className="mayor-description">Neil loves fibonacci styled poker games and shipping container metaphors</p>

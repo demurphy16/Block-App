@@ -23,13 +23,6 @@
   color: white;
   font-family: var(--font-noto);
 }
-.header-text-container > img {
-  border: 1px solid red;
-  color: white;
-  width: 40px;
-  height: 40px;
-}
-
 
 .white-space {
   height: 7vh;

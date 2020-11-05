@@ -3,9 +3,11 @@ import "./Footer.css";
 import { Link } from "react-router-dom";
 
 function Header(props) {
+  const { signIn } = props;
+
   return (
     <footer>
-      <div className="nav">
+      <div className={signIn === false ? "sign-in-footer" : "nav"}>
         <div className="logo-container">
           <Link className="logo-footer" to="/home">
             block

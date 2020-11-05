@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./PostCreate.css";
-import Layout from "../../components/Shared/Layout/Layout";
 import { Redirect } from "react-router-dom";
 import { createAnnouncement } from "../../services/announcements";
 
@@ -32,7 +31,7 @@ const PostCreate = (props) => {
     return <Redirect to={`/home`} />;
   }
   return (
-    <Layout user={props.user}>
+    <div user={props.user}>
       <h1 className="create-title">Create Your Announcement</h1>
       <div className="form-container">
         <form className="create-form" onSubmit={handleSubmit}>
@@ -48,45 +47,46 @@ const PostCreate = (props) => {
                 onChange={handleChange}
               />
               <div className="dropdown">
-              <label className="label-cat">Select Category:</label>
-              <select
-                className="input-category"
-                value={announcement.category}
-                name="category"
-                required
-                onChange={handleChange}>
-                <option>Construction</option>
-                <option>Event</option>
-                <option>Local Government</option>
-                <option>Resources</option>
-                <option>Neighborhood</option>
-                <option>Local Business</option>
-            </select>
+                <label className="label-cat">Select Category:</label>
+                <select
+                  className="input-category"
+                  value={announcement.category}
+                  name="category"
+                  required
+                  onChange={handleChange}
+                >
+                  <option>Construction</option>
+                  <option>Event</option>
+                  <option>Local Government</option>
+                  <option>Resources</option>
+                  <option>Neighborhood</option>
+                  <option>Local Business</option>
+                </select>
               </div>
-              </div>
-          <textarea
-            className="input input-content"
-            placeholder="Content"
-            value={announcement.content}
-            name="content"
-            required
-            onChange={handleChange}
-          />
-          <input
-            className="input input-image-link"
-            placeholder="Image Link"
-            value={announcement.imgURL}
-            name="imgURL"
-            required
-            onChange={handleChange}
-          />
-          <button type="submit" className="submit-button">
+            </div>
+            <textarea
+              className="input input-content"
+              placeholder="Content"
+              value={announcement.content}
+              name="content"
+              required
+              onChange={handleChange}
+            />
+            <input
+              className="input input-image-link"
+              placeholder="Image Link"
+              value={announcement.imgURL}
+              name="imgURL"
+              required
+              onChange={handleChange}
+            />
+            <button type="submit" className="submit-button">
               Create Announcement
-          </button>
+            </button>
           </div>
         </form>
-        </div>
-      </Layout>
+      </div>
+    </div>
   );
 };
 
