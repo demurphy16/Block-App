@@ -2,11 +2,11 @@ import { useState } from "react";
 import "./LocalGov.css";
 import Nydia from "../../assets/img/nydia.jpeg";
 import Hakeem from "../../assets/img/hakeem.png";
-import Mayors from './MayorCards/Mayors'
+import Mayors from "./MayorCards/Mayors";
 
 function LocalGov() {
-  const [rep1, setRep1] = useState("Nydia M. Velazquez");
-  const [rep2, setRep2] = useState("Hakeem Jeffries");
+  const [rep1] = useState("Nydia M. Velazquez");
+  const [rep2] = useState("Hakeem Jeffries");
 
   return (
     <div className="page-container">
@@ -29,7 +29,7 @@ function LocalGov() {
       <div className="rep-container">
         <div className="rep rep1">
           <div className="info-container">
-            <img src={Nydia} className="rep-img nydia" alt="nydia"/>
+            <img src={Nydia} className="rep-img nydia" alt="nydia" />
             <h4>{rep1}</h4>
             <p className="district">Representitive, 7th District</p>
             <button className="rep-button">Contact Me</button>
@@ -46,7 +46,7 @@ function LocalGov() {
         </div>
         <div className="rep rep2">
           <div className="info-container">
-            <img src={Hakeem} className="rep-img hakeem" alt="hakeem"/>
+            <img src={Hakeem} className="rep-img hakeem" alt="hakeem" />
             <h4>{rep2}</h4>
             <p className="district">Representitive, 8th District</p>
             <button className="rep-button">Contact Me</button>
