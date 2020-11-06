@@ -22,3 +22,7 @@ a {
   --font-merriweather: "Merriweather", serif;
   --font-roboto: "Roboto", sans-serif;
 }
+
+.hidden {
+  display: none;
+}
