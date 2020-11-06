@@ -43,7 +43,7 @@
 }
 
 .login-forms input {
-  margin: 5px;
+  margin-top: 15px;
   font-family: var(--font-noto);
   border-radius: 5px;
   border: none;
@@ -54,6 +54,7 @@
   font-size: 12px;
   font-family: var(--font-noto);
   width: 85%;
+  margin: 5px 0px 25px 0px;
 }
 
 .login-button-container {

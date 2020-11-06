@@ -11,7 +11,7 @@ function Title(props) {
       <img src={title} alt="name of neighborhood" />
       <form>
         <input
-          className="search"
+          className="search" //fix meeeeeeeeee :(
           name="Search"
           placeholder="Explore other neighborhoods"
           type="text"
