@@ -44,3 +44,12 @@ export const deleteUser = async (id) => {
     throw error;
   }
 };
+
+export const signIn = async (userInfo) => {
+  try {
+    const response = await api.post(`/signin`, userInfo);
+    return response.data;
+  } catch (error) {
+    throw error;
+  }
+};

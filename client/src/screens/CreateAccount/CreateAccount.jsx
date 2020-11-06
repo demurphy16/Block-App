@@ -123,7 +123,6 @@ function CreateAccount(props) {
             I've read and accept the <span> Terms of Service </span> and
             <span> Private Policy </span>
           </label>
-          {/* <Link to="/home"> */}
           <button
             type="submit"
             className="create-account-submit"
@@ -131,7 +130,6 @@ function CreateAccount(props) {
           >
             Create Account
           </button>
-          {/* </Link> */}
         </form>
         <p className="create-account-login">
           Already registered?{" "}

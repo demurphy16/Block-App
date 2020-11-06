@@ -15,7 +15,6 @@ import { Route, Switch, Redirect } from "react-router-dom";
 import "./App.css";
 
 function App() {
-  const [signIn, setSignIn] = useState(false);
   const [user, setUser] = useState(null);
 
   function handleSetUser(user) {
@@ -32,35 +31,30 @@ function App() {
     checkStorage();
   }, []);
 
+  function deleteStorage() {
+    localStorage.clear("user");
+    window.location.reload(false);
+  }
+
   return (
-    <Layout signIn={signIn} setSignIn={setSignIn}>
+    <Layout user={user} setUser={handleSetUser} deleteStorage={deleteStorage}>
       <div className="App">
         <Switch>
           <Route exact path="/">
             <LandingScreen />
           </Route>
           <Route exact path="/create-account">
-            <CreateAccount
-              signIn={signIn}
-              setSignIn={setSignIn}
-              // user={user}
-              // setUser={handleSetUser}
-            />
+            <CreateAccount />
           </Route>
           <Route exact path="/login">
-            <Login
-              signIn={signIn}
-              setSignIn={setSignIn}
-              user={user}
-              setUser={handleSetUser}
-            />
+            <Login user={user} setUser={handleSetUser} />
           </Route>
           {user ? (
             <Route exact path="/home">
-              <Home signIn={signIn} setSignIn={setSignIn} />
+              <Home />
             </Route>
           ) : (
-            <Redirect to="/create-account" />
+            <Redirect to="/" />
           )}
           <Route exact path="/construction" component={Construction} />
           <Route exact path="/businesses" component={LocalBusinesses} />

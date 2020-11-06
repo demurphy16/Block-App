@@ -62,10 +62,32 @@ const deleteUser = async (req, res) => {
   }
 };
 
+const signIn = async (req, res) => {
+  try {
+    console.log(`req.body ${{ ...req.body }}`);
+    const user = await User.find({ emailAddress: req.body.emailAddress });
+    // return res.json(user);
+    // console.log(`user ${user}`);
+    // console.log(`user password ${user[0].password}`);
+    // console.log(`req.body password ${req.body.password}`);
+    if (user[0].password === req.body.password) {
+      console.log("passwords matched");
+      res.json(user);
+    } else {
+      console.log("passwords did not match");
+      res.json(null);
+    }
+    // res.json(user);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+
 module.exports = {
   createUser,
   getUsers,
   getUser,
   updateUser,
   deleteUser,
+  signIn,
 };
