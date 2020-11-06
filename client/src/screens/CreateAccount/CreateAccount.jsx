@@ -119,9 +119,13 @@ function CreateAccount(props) {
           <input placeholder="Re-Enter Password" type="text" />
 
           <label htmlFor="terms-conditions" className="terms-conditions">
-            <input type="checkbox" name="terms-conditions" />
+            <input
+              type="checkbox"
+              name="terms-conditions"
+              className="terms-checkbox"
+            />
             I've read and accept the <span> Terms of Service </span> and
-            <span> Private Policy </span>
+            <span> Privacy Policy </span>
           </label>
           <button
             type="submit"

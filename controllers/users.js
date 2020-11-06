@@ -72,7 +72,7 @@ const signIn = async (req, res) => {
     // console.log(`req.body password ${req.body.password}`);
     if (user[0].password === req.body.password) {
       console.log("passwords matched");
-      res.json(user);
+      res.json(user[0]);
     } else {
       console.log("passwords did not match");
       res.json(null);

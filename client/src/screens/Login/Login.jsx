@@ -4,7 +4,7 @@ import { signIn } from "../../services/users";
 import "../Login/Login.css";
 
 function Login(props) {
-  const { user, setUser } = props;
+  const { user, handleSetUser } = props;
   const [userInfo, setUserInfo] = useState({
     emailAddress: "",
     password: "",
@@ -13,8 +13,8 @@ function Login(props) {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const user = await signIn(userInfo);
-    setUser({ user });
-    console.log(userInfo);
+    handleSetUser(user);
+    // console.log(userInfo);
     console.log(user);
   };
 
@@ -31,10 +31,8 @@ function Login(props) {
   //     return <Redirect to={`/home`} />
   // }, [user]);
 
-  function redirect() {
-    if (user !== null) {
-      return <Redirect to={`/home`} />;
-    }
+  if (user !== null) {
+    return <Redirect to={`/home`} />;
   }
   return (
     <div className="login-screen-container">
@@ -51,6 +49,7 @@ function Login(props) {
               name="emailAddress"
               onChange={handleChange}
             />
+            <br />
             <input
               placeholder="Password"
               type="text"
@@ -58,13 +57,11 @@ function Login(props) {
               name="password"
               onChange={handleChange}
             />
+            <p>Forgot Password?</p>
             <div className="login-button-container">
-              <button type="submit" onClick={() => redirect()}>
-                Login
-              </button>
+              <button type="submit">Login</button>
             </div>
           </form>
-          <p>Forgot Password?</p>
         </div>
       </div>
     </div>

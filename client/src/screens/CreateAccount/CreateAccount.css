@@ -103,6 +103,7 @@
 
 .create-account-login {
   font-size: 10px;
+  margin-top: 5px;
   width: 100%;
   text-align: center;
 }
@@ -121,6 +122,7 @@
 .terms-conditions input {
   margin: auto 10px;
 }
+
 .terms-conditions span {
   color: rgba(0, 0, 255, 0.75);
   text-decoration: underline solid rgba(0, 0, 255, 0.75);

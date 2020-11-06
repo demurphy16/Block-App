@@ -19,16 +19,26 @@ function App() {
 
   function handleSetUser(user) {
     setUser(user);
-    localStorage.setItem("user", user);
+    // console.log(`handle set user ${user.firstName}`);
+    localStorage.setItem("user", JSON.stringify(user));
+    // console.log(user);
   } // passed as a prop in Create Account
 
   function checkStorage() {
-    const user = localStorage.getItem("user");
+    let user = localStorage.getItem("user");
+    console.log(`local storage user ${user}`);
+    user = JSON.parse(user);
+    console.log(`new user parse ${user}`);
+    // console.log([...user]);
     user ? setUser(user) : setUser(null);
   } // call as a use Effect []
 
   useEffect(() => {
+    // console.log(user);
     checkStorage();
+    // console.log(user);
+    // console.log(user[0], user[1]);
+    // console.log([...user]);
   }, []);
 
   function deleteStorage() {
@@ -47,7 +57,7 @@ function App() {
             <CreateAccount />
           </Route>
           <Route exact path="/login">
-            <Login user={user} setUser={handleSetUser} />
+            <Login user={user} handleSetUser={handleSetUser} />
           </Route>
           {user ? (
             <Route exact path="/home">
