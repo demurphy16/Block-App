@@ -115,7 +115,7 @@
 }
 
 .terms-conditions {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   font-family: var(--font-noto);
   color: rgba(94, 94, 94, 0.75);
 }

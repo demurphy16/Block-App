@@ -19,14 +19,16 @@ function App() {
 
   function handleSetUser(user) {
     setUser(user);
-    console.log(`handle set user ${user.firstName}`);
+    // console.log(`handle set user ${user.firstName}`);
     localStorage.setItem("user", JSON.stringify(user));
     // console.log(user);
   } // passed as a prop in Create Account
 
   function checkStorage() {
-    const user = localStorage.getItem("user");
+    let user = localStorage.getItem("user");
     console.log(`local storage user ${user}`);
+    user = JSON.parse(user);
+    console.log(`new user parse ${user}`);
     // console.log([...user]);
     user ? setUser(user) : setUser(null);
   } // call as a use Effect []
@@ -37,7 +39,7 @@ function App() {
     // console.log(user);
     // console.log(user[0], user[1]);
     // console.log([...user]);
-  }, [user]);
+  }, []);
 
   function deleteStorage() {
     localStorage.clear("user");
@@ -62,7 +64,7 @@ function App() {
               <Home />
             </Route>
           ) : (
-            <Redirect to="/login" />
+            <Redirect to="/" />
           )}
           <Route exact path="/construction" component={Construction} />
           <Route exact path="/businesses" component={LocalBusinesses} />
