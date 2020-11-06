@@ -16,7 +16,7 @@
   /* border: 2px solid red; */
   backdrop-filter: blur(5px);
   background: linear-gradient(rgba(4, 42, 43, 0.5), rgba(4, 42, 43, 0.5));
-  padding: 20px;
+  padding: 20px 40px;
 }
 
 .login-screen-logo {
@@ -73,9 +73,25 @@
   padding: 10px 0;
   border-radius: 6px;
   border: none;
+  margin-bottom: 10px;
   transition: opacity 0.2s ease-in-out;
 }
 
 .login-button-container button:hover {
   opacity: 0.5;
+}
+
+.error-message {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.error-message p {
+  /* border: 2px solid blue; */
+  color: red;
+  width: 100%;
 }

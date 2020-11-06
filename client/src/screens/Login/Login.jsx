@@ -9,11 +9,14 @@ function Login(props) {
     emailAddress: "",
     password: "",
   });
+  const [error, setError] = useState(false);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    setError(true);
     const user = await signIn(userInfo);
     handleSetUser(user);
+
     // console.log(userInfo);
     console.log(user);
   };
@@ -62,6 +65,13 @@ function Login(props) {
               <button type="submit">Login</button>
             </div>
           </form>
+          <div
+            className={
+              error === false ? "error-message hidden" : "error-message"
+            }
+          >
+            <p>Email or Password were incorrect.</p>
+          </div>
         </div>
       </div>
     </div>
