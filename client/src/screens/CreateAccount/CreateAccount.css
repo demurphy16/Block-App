@@ -81,14 +81,17 @@
   width: 100%;
 }
 
-.create-account-form a {
+/* .create-account-form a {
   margin: 30px auto 0 auto;
   width: 80%;
-}
+} */
 
 .create-account-submit {
   padding: 15px;
-  width: 100%;
+  align-self: center;
+  margin-top: 15%;
+  width: 80%;
+  max-width: 400px;
   color: white;
   background-color: #042a2b;
   border-radius: 5px;

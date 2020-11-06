@@ -4,10 +4,10 @@ import "./Header.css";
 import { NavLink } from "react-router-dom";
 
 function Header(props) {
-  const { signIn } = props;
+  const { deleteStorage, user } = props;
   return (
     <nav>
-      <div className={signIn === false ? "sign-in-nav" : "nav"}>
+      <div className={user === null ? "sign-in-nav" : "nav"}>
         <div className="links">
           <NavLink className="link" to="/businesses">
             Local Business
@@ -25,7 +25,9 @@ function Header(props) {
             Hotline
           </NavLink>
           <NavLink className="user-icon" to="/home">
-            <img src={UserIcon} alt="user-icon" />
+            <button onClick={deleteStorage}>
+              <img src={UserIcon} alt="user-icon" />
+            </button>
           </NavLink>
         </div>
       </div>

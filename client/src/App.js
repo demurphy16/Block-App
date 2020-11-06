@@ -3,7 +3,7 @@ import Construction from "../src/screens/Construction/Construction";
 import LandingScreen from "../src/screens/LandingScreen/LandingScreen";
 import LocalBusinesses from "../src/screens/LocalBusinesses/LocalBusinesses";
 import Home from "../src/screens/Home/Home";
-import Hotline from "../src/screens/Hotline/Hotline"
+import Hotline from "../src/screens/Hotline/Hotline";
 import LocalGov from "../src/screens/LocalGov/LocalGov";
 import PostCreate from "../src/screens/PostCreate/PostCreate";
 import PostDetail from "../src/screens/PostDetail/PostDetail";
@@ -14,9 +14,7 @@ import Layout from "../src/components/Shared/Layout/Layout";
 import { Route, Switch, Redirect } from "react-router-dom";
 import "./App.css";
 
-
 function App() {
-  const [signIn, setSignIn] = useState(false);
   const [user, setUser] = useState(null);
 
   function handleSetUser(user) {
@@ -33,30 +31,30 @@ function App() {
     checkStorage();
   }, []);
 
+  function deleteStorage() {
+    localStorage.clear("user");
+    window.location.reload(false);
+  }
+
   return (
-    <Layout signIn={signIn} setSignIn={setSignIn}>
+    <Layout user={user} setUser={handleSetUser} deleteStorage={deleteStorage}>
       <div className="App">
         <Switch>
           <Route exact path="/">
             <LandingScreen />
           </Route>
           <Route exact path="/create-account">
-            <CreateAccount
-              signIn={signIn}
-              setSignIn={setSignIn}
-              user={user}
-              setUser={handleSetUser}
-            />
+            <CreateAccount />
           </Route>
           <Route exact path="/login">
-            <Login signIn={signIn} setSignIn={setSignIn} />
+            <Login user={user} setUser={handleSetUser} />
           </Route>
           {user ? (
             <Route exact path="/home">
-              <Home signIn={signIn} setSignIn={setSignIn} />
+              <Home />
             </Route>
           ) : (
-            <Redirect to="/create-account" />
+            <Redirect to="/" />
           )}
           <Route exact path="/construction" component={Construction} />
           <Route exact path="/businesses" component={LocalBusinesses} />

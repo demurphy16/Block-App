@@ -4,14 +4,14 @@ import Footer from "../Footer/Footer";
 import "./Layout.css";
 
 function Layout(props) {
-  const { signIn } = props;
+  const { deleteStorage, user } = props;
 
   return (
     <div className="layout">
-      <Header signIn={signIn} />
+      <Header deleteStorage={deleteStorage} user={user} />
       <div className="layout-children">
         {props.children}
-        <Footer signIn={signIn} />
+        <Footer user={user} />
       </div>
     </div>
   );
