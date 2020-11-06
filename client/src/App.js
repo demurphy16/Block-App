@@ -3,7 +3,7 @@ import Construction from "../src/screens/Construction/Construction";
 import LandingScreen from "../src/screens/LandingScreen/LandingScreen";
 import LocalBusinesses from "../src/screens/LocalBusinesses/LocalBusinesses";
 import Home from "../src/screens/Home/Home";
-import Hotline from "../src/screens/Hotline/Hotline"
+import Hotline from "../src/screens/Hotline/Hotline";
 import LocalGov from "../src/screens/LocalGov/LocalGov";
 import PostCreate from "../src/screens/PostCreate/PostCreate";
 import PostDetail from "../src/screens/PostDetail/PostDetail";
@@ -13,7 +13,6 @@ import Login from "../src/screens/Login/Login";
 import Layout from "../src/components/Shared/Layout/Layout";
 import { Route, Switch, Redirect } from "react-router-dom";
 import "./App.css";
-
 
 function App() {
   const [signIn, setSignIn] = useState(false);
@@ -44,12 +43,17 @@ function App() {
             <CreateAccount
               signIn={signIn}
               setSignIn={setSignIn}
-              user={user}
-              setUser={handleSetUser}
+              // user={user}
+              // setUser={handleSetUser}
             />
           </Route>
           <Route exact path="/login">
-            <Login signIn={signIn} setSignIn={setSignIn} />
+            <Login
+              signIn={signIn}
+              setSignIn={setSignIn}
+              user={user}
+              setUser={handleSetUser}
+            />
           </Route>
           {user ? (
             <Route exact path="/home">

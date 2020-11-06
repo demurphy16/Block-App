@@ -1,9 +1,16 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Redirect } from "react-router-dom";
 import "../Login/Login.css";
 
 function Login(props) {
-  const { signIn, setSignIn } = props;
+  const { user, setUser } = props;
+  const [login, setLogin] = useState(false);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  if (login) {
+    return <Redirect to={`/home`} />;
+  }
 
   return (
     <div className="login-screen-container">
@@ -13,17 +20,29 @@ function Login(props) {
           <form>
             <label>Sign In</label>
             <br />
-            <input placeholder="Email" />
+            <input
+              placeholder="Email"
+              type="text"
+              value={email}
+              name="email"
+              onChange={() => setEmail(email)}
+            />
           </form>
           <form>
-            <input placeholder="Password" />
+            <input
+              placeholder="Password"
+              type="text"
+              value={password}
+              name="password"
+              onChange={() => setPassword(password)}
+            />
           </form>
           <p>Forgot Password?</p>
         </div>
         <div className="login-button-container">
-          <Link to="/home">
-            <button onClick={() => setSignIn(!signIn)}>Login</button>
-          </Link>
+          {/* <Link to="/home"> */}
+          <button type="submit">Login</button>
+          {/* </Link> */}
         </div>
       </div>
     </div>
