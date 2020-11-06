@@ -7,11 +7,11 @@ const main = async () => {
   const users = [
     {
       firstName: "Andrew",
-    lastName: "Ferris",
-    emailAddress: "AppleHutCEO@AppleHut.com",
-    cityTown: "Cupertino",
-    state: "  CA",
-    password: "TigerKingIsMyKing",
+      lastName: "Ferris",
+      emailAddress: "test@gmail.com",
+      cityTown: "Cupertino",
+      state: "  CA",
+      password: "pass",
     },
   ];
 
