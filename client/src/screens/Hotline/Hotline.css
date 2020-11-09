@@ -7,7 +7,7 @@
 .hotline-header {
   display: flex;
   align-items: center;
-  height: 25vh;
+  height: 22vh;
   background-color: rgba(4, 42, 43, 4.3);
 }
 .header-text-container {
@@ -17,7 +17,7 @@
 .header-text-container > h2 {
   color: white;
   font-size: 35px;
-  font-family: sans-serif;
+  font-family: var(--font-merriweather);
 }
 .header-text-container > p {
   color: white;
@@ -26,7 +26,6 @@
 
 .white-space {
   height: 7vh;
-  /* border: 1px solid blue; */
   display: flex;
   justify-content: space-between;
 }
@@ -45,12 +44,45 @@
   color: rgba(4, 42, 43, 4.3);
   font-weight: 700;
 }
-
+.mega-container {
+  display: flex;
+  background-color: rgba(227, 223, 209, 0.913);
+}
 .contact-div {
   height: 65vh;
-  /* border: 1px solid red; */
-  background-color: rgba(227, 223, 209, 0.913)
+  width: 50vw;
+  background-color: rgba(227, 223, 209, 0.913);
 }
+.hotline-image-container {
+  position: relative;
+}
+.hotline-image-div {
+  margin-left: 5vw;
+  margin-top: 6vh;
+  width: 450px;
+  height: 300px;
+  position: absolute;
+  z-index: 2;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.486);
+}
+.image-box {
+  width: 450px;
+  height: 300px;
+  position: absolute;
+  margin-left: 2vw;
+  margin-top: 10vh;
+  background-color: rgba(177, 174, 162, 0.913);
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.486);
+}
+.hotline-image-div > img {
+  width: 450px;
+  height: 300px;
+}
+
+.hotline-h2 {
+  font-weight: 900;
+}
+
 .contact-div > h2 {
   font-size: 30px;
   font-family: var(--font-noto);
@@ -61,14 +93,13 @@
 }
 .underlines {
   height: 13vh;
-  width:40vw;
+  width: 40vw;
   text-decoration: underline;
   margin-left: 7vw;
   font-family: var(--font-noto);
   font-weight: 550;
-
-  margin-bottom: 0%;
 }
+
 .complaints > p {
   margin-bottom: 2vh;
 }
