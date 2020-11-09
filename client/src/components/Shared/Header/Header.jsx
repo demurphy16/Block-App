@@ -21,7 +21,7 @@ function Header(props) {
           <NavLink className="link" to="/construction">
             Construction
           </NavLink>
-          <NavLink className="link" to="/home">
+          <NavLink className="link" to="/hotline">
             Hotline
           </NavLink>
           <NavLink className="user-icon" to="/">
