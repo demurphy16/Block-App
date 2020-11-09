@@ -1,6 +1,7 @@
 import React from "react";
 import map from "../../assets/img/map_image.png";
 import arrow from "../../assets/icons/noun_Left_1920775.png";
+import {Link} from "react-router-dom"
 import "../Construction/Construction.css";
 
 function Construction(props) {
@@ -11,7 +12,7 @@ function Construction(props) {
         <div className="link-to-home">
           <img src={arrow} alt="left-arrow" className="left-arrow" />
           <h4>
-            <a href={`/home`}>Back to Homepage</a>
+            <Link to="/home">Back to Homepage</Link>
           </h4>
         </div>
       </div>
