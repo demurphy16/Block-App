@@ -12,7 +12,7 @@ function Header(props) {
           <NavLink className="link" to="/businesses">
             Local Business
           </NavLink>
-          <NavLink className="link" to="/home">
+          <NavLink className="link" to="/localgov">
             Local Government
           </NavLink>
           <NavLink className="logo" to="/home">
