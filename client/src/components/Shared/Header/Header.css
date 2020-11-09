@@ -24,7 +24,6 @@ nav {
 }
 
 .links {
-  /* border: 2px solid green; */
   font-family: var(--font-noto);
   font-weight: 700;
   font-size: 18px;
@@ -51,16 +50,28 @@ nav {
   font-weight: 700;
   letter-spacing: -1px;
   align-self: center;
-  /* border: 2px solid yellow; */
+  margin: 0 auto;
 }
 
-.user-icon button {
+.user-icon {
   background-color: transparent;
   border: none;
   position: absolute;
-  top: 3%;
+  right: 1%;
+  top: 2.5%;
 }
 
+.right-links {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.left-links {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
 @media screen and (max-width: 1068px) {
   .link {
     font-size: 18px;

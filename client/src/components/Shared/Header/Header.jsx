@@ -9,27 +9,29 @@ function Header(props) {
     <nav>
       <div className={user === null ? "sign-in-nav" : "nav"}>
         <div className="links">
-          <NavLink className="link" to="/businesses">
-            Local Business
-          </NavLink>
-          <NavLink className="link" to="/localgov">
-            Local Government
-          </NavLink>
+          <div className="left-links">
+            <NavLink className="link" to="/businesses">
+              Local Business
+            </NavLink>
+            <NavLink className="link" to="/localgov">
+              Local Government
+            </NavLink>
+          </div>
           <NavLink className="logo" to="/home">
             block
           </NavLink>
-          <NavLink className="link" to="/construction">
-            Construction
-          </NavLink>
-          <NavLink className="link" to="/hotline">
-            Hotline
-          </NavLink>
-          <NavLink className="user-icon" to="/">
-            <button onClick={deleteStorage}>
-              <img src={UserIcon} alt="user-icon" />
-            </button>
-          </NavLink>
+          <div className="right-links">
+            <NavLink className="link" to="/construction">
+              Construction
+            </NavLink>
+            <NavLink className="link" to="/hotline">
+              Hotline
+            </NavLink>
+          </div>
         </div>
+        <button className="user-icon" onClick={deleteStorage}>
+          <img src={UserIcon} alt="user-icon" />
+        </button>
       </div>
     </nav>
   );
