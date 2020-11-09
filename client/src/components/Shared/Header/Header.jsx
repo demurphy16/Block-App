@@ -24,7 +24,7 @@ function Header(props) {
           <NavLink className="link" to="/home">
             Hotline
           </NavLink>
-          <NavLink className="user-icon" to="/home">
+          <NavLink className="user-icon" to="/">
             <button onClick={deleteStorage}>
               <img src={UserIcon} alt="user-icon" />
             </button>
