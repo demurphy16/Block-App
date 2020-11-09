@@ -18,7 +18,8 @@
   min-height: 245px;
   max-width: 185px;
   min-width: 185px;
-  margin: 8px 13px;
+  margin: 15px 13px;
+  margin-bottom: 15px;
   padding: 5px 0;
   font-family: var(--font-noto);
 }

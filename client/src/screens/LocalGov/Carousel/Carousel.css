@@ -1,0 +1,41 @@
+.carousel-mega {
+  display: flex;
+  justify-content: center;
+  height: 27vh;
+  background-color: rgb(173, 186, 183);
+  align-items: center;
+  margin-top: 12px;
+}
+.gov-cards {
+  background-color: white;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.486);
+  height: 90%;
+  min-width: 135px;
+  max-width: 135px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--font-noto);
+  margin: 0 25px;
+}
+.gov-cards > img {
+  border-radius: 50%;
+  height: 11vh;
+  margin: 5px 0 8px 0;
+}
+
+.gov-cards > h3 {
+  font-size: 12px;
+}
+.gov-cards > p {
+  font-size: 12px;
+}
+.gov-icons {
+  margin-top: 10px;
+}
+.gov-icons > img {
+  height: 15px;
+  margin: 5px;
+}
+
+

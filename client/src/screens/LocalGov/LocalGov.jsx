@@ -3,6 +3,7 @@ import "./LocalGov.css";
 import Nydia from "../../assets/img/nydia.jpeg";
 import Hakeem from "../../assets/img/hakeem.png";
 import Mayors from "./MayorCards/Mayors";
+import Carousel from "./Carousel/Carousel"
 
 function LocalGov() {
   const [rep1] = useState("Nydia M. Velazquez");
@@ -63,6 +64,9 @@ function LocalGov() {
       </div>
       <div className="mayor">
         <Mayors />
+      </div>
+      <div className="carousel-container">
+        <Carousel />
       </div>
     </div>
   );
