@@ -17,6 +17,10 @@
   flex-direction: row;
 }
 
+.business-to-home a {
+  color: #042a2b;
+}
+
 .left-arrow-business {
   display: flex;
   width: 20px;

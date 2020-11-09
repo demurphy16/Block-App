@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Button from "../../components/Shared/Button/Button";
 import arrow from "../../assets/icons/noun_Left_1920775.png";
 import bakery from "../../assets/img/German_s Soup.png";
@@ -13,6 +12,7 @@ import mail from "../../assets/icons/mail.svg";
 import phone from "../../assets/icons/phone.svg";
 import restaurants from "../../assets/icons/restaurants.svg";
 import retail from "../../assets/icons/businesses.svg";
+import { Link } from "react-router-dom";
 import "../LocalBusinesses/LocalBusinesses.css";
 
 function LocalBusinesses(props) {
