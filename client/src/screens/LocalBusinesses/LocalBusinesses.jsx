@@ -23,7 +23,7 @@ function LocalBusinesses(props) {
         <div className="business-to-home">
           <img src={arrow} alt="left-arrow" className="left-arrow-business" />
           <h4>
-            <Link to="/home">Back to Homepage</Link>
+            <Link to={`/home`}>Back to Homepage</Link>
           </h4>
         </div>
       </div>
