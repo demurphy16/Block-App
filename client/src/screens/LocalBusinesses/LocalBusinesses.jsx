@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Button from "../../components/Shared/Button/Button";
 import arrow from "../../assets/icons/noun_Left_1920775.png";
 import bakery from "../../assets/img/German_s Soup.png";
@@ -22,7 +23,7 @@ function LocalBusinesses(props) {
         <div className="business-to-home">
           <img src={arrow} alt="left-arrow" className="left-arrow-business" />
           <h4>
-            <a href={`/home`}>Back to Homepage</a>
+            <Link to={`/home`}>Back to Homepage</Link>
           </h4>
         </div>
       </div>
