@@ -48,7 +48,7 @@
   text-align: left;
   background: url("../../assets/icons/search.svg") no-repeat;
   background-size: 5%;
-  background-position: bottom 7px left 12px;
+  background-position: bottom 50% left 4%;
   background-color: white;
   margin-right: -0.2em;
 }
@@ -132,7 +132,7 @@
 }
 
 .popular-name {
-  font-size: 1.3em;
+  font-size: 120%;
   letter-spacing: 1px;
   color: #042a2b;
 }
@@ -172,7 +172,7 @@
   font-weight: bold;
   width: 50%;
   transition: all 0.1s;
-  height: 10%;
+  height: auto;
   margin: 2% auto;
 }
 
@@ -180,4 +180,28 @@
   color: #ffffff;
   background-color: #042a2b;
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .business-button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .popular {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .email-icon {
+    width: 75%;
+    height: auto;
+  }
+
+  .phone-icon {
+    width: 75%;
+    height: auto;
+  }
 }
