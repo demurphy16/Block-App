@@ -32,9 +32,11 @@ function LocalGov() {
           <div className="info-container">
             <img src={Nydia} className="rep-img nydia" alt="nydia" />
             <h4>{rep1}</h4>
-            <p className="district">Representitive, 7th District</p>
-            <button className="rep-button">Contact Me</button>
-            <button className="rep-button">Learn More</button>
+            <p className="district">Representative, 7th District</p>
+            <div className="rep-button-container">
+              <button className="rep-button">Contact Me</button>
+              <button className="rep-button">Learn More</button>
+            </div>
           </div>
           <p className="rep-description">
             Congresswoman Velaquez is dedicated to ensuring that New York City
@@ -49,9 +51,11 @@ function LocalGov() {
           <div className="info-container">
             <img src={Hakeem} className="rep-img hakeem" alt="hakeem" />
             <h4>{rep2}</h4>
-            <p className="district">Representitive, 8th District</p>
-            <button className="rep-button">Contact Me</button>
-            <button className="rep-button">Learn More</button>
+            <p className="district">Representative, 8th District</p>
+            <div className="rep-button-container">
+              <button className="rep-button">Contact Me</button>
+              <button className="rep-button">Learn More</button>
+            </div>
           </div>
           <p className="rep-description">
             Whether at home in New York or in Washington, DC, my job is to fight

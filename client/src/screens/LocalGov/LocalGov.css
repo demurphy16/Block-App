@@ -2,7 +2,7 @@ body {
   height: 100vh;
 }
 .page-container {
-  height: 100vh;
+  min-height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -16,7 +16,6 @@ body {
 }
 
 .gov-form {
-  /* border: 1px solid red; */
   text-align: center;
 }
 .gov-search {
@@ -30,7 +29,6 @@ body {
 }
 
 .gov-button-container {
-  /* border: 1px solid green; */
   display: flex;
   flex-flow: row wrap;
   width: 60vw;
@@ -72,16 +70,16 @@ body {
   background-color: rgb(242, 242, 242);
 }
 .rep1 {
-  /* border: 1px solid yellow; */
   font-family: var(--font-noto);
 }
 .info-container {
-  /* border: 1px solid red; */
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   padding: 5px;
   font-size: 14px;
+  min-width: 165px;
+  
 }
 .rep-img {
   border-radius: 50%;
@@ -89,16 +87,24 @@ body {
   margin-left: 1vw;
 }
 .rep-description {
-  /* border: 1px solid black; */
   text-align: center;
   width: 88vw;
   line-height: 3vh;
   padding: 5px;
   font-size: 12px;
-  margin: auto 0;
+  margin: 10px 0;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 .district {
   font-size: 13px;
+  text-align: center;
+  font-size: 11px;
+}
+.rep-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .rep-button {
   font-weight: bold;
@@ -106,18 +112,15 @@ body {
   color: white;
   border: none;
   border-radius: 20px;
-  margin: 0 4px;
+  margin: 0 2px;
   font-size: 11px;
   cursor: pointer;
+  height: 20px;
 }
 .rep2 {
-  /* border: 1px solid blue; */
   font-family: var(--font-noto);
 }
 
 .mayor {
-  /* display: flex; */
-  /* flex-direction: row; */
-  /* border: 1px solid black; */
   height: 35vh;
 }
