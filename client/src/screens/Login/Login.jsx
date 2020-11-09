@@ -13,13 +13,19 @@ function Login(props) {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    setError(true);
+    setTimeout(function () {
+      toggleError();
+    }, 500);
     const user = await signIn(userInfo);
     handleSetUser(user);
 
     // console.log(userInfo);
-    console.log(user);
+    // console.log(user);
   };
+
+  function toggleError() {
+    setError(true);
+  }
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -55,7 +61,7 @@ function Login(props) {
             <br />
             <input
               placeholder="Password"
-              type="text"
+              type="password"
               value={userInfo.password}
               name="password"
               onChange={handleChange}

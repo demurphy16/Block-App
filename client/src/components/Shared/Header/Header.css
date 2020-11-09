@@ -58,7 +58,7 @@ nav {
   background-color: transparent;
   border: none;
   position: absolute;
-  top: 10px;
+  top: 2%;
 }
 
 @media screen and (max-width: 1068px) {

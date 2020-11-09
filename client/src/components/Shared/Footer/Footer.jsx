@@ -7,7 +7,7 @@ function Header(props) {
 
   return (
     <footer>
-      <div className={user === null ? "sign-in-footer" : "nav"}>
+      <div className={user === null ? "hidden" : "nav"}>
         <div className="logo-container">
           <Link className="logo-footer" to="/home">
             block
