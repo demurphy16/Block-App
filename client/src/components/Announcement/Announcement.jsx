@@ -6,7 +6,6 @@ import comment from "../../assets/icons/comment.svg";
 import saveIcon from "../../assets/icons/saveicon.svg";
 import randomIcon from "../../assets/icons/randomicon.svg";
 import repost from "../../assets/icons/Repost.svg";
-// import Button from "../Shared/Button/Button";
 
 const Announcement = (props) => {
   return (
@@ -29,7 +28,6 @@ const Announcement = (props) => {
             <img src={repost} alt="repost-icon" />
           </div>
         </Link>
-        {/* <Button></Button> */}
       </div>
       <div className="card-box"></div>
     </div>

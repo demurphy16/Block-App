@@ -38,7 +38,6 @@
 }
 
 .create-account-form {
-  /* border: 2px solid red; */
   display: flex;
   flex-direction: column;
   color: #042a2b;
@@ -66,12 +65,10 @@
 
 .create-account-name,
 .create-account-address {
-  /* border: 2px solid blue; */
   display: flex;
   justify-content: space-between;
 }
 .create-account-alignment {
-  /* border: 2px solid green; */
   display: flex;
   flex-direction: column;
 
@@ -80,11 +77,6 @@
 .create-account-firstname input {
   width: 100%;
 }
-
-/* .create-account-form a {
-  margin: 30px auto 0 auto;
-  width: 80%;
-} */
 
 .create-account-submit {
   padding: 15px;
@@ -115,7 +107,6 @@
 }
 
 .terms-conditions {
-  /* border: 2px solid red; */
   font-family: var(--font-noto);
   color: rgba(94, 94, 94, 0.75);
 }

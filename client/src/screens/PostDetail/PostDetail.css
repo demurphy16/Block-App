@@ -93,16 +93,8 @@
   .announcement-detail {
     padding: 0px;
     padding-top: 120px;
-    /* margin: 0px; */
-    /* display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; */
   }
   .detail-button-container {
-    /* display: flex;
-      justify-content: space-evenly;
-      padding-top: 0px; */
     padding: 20px;
     padding-bottom: 80px;
   }

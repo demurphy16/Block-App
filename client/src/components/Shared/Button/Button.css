@@ -24,7 +24,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* object-fit: cover; */
 }
 
 .button-content p {
@@ -36,17 +35,7 @@
 }
 
 .button-background img {
-  /* border: 2px solid red; */
   width: 45px;
   height: 45px;
   object-fit: scale-down;
-  /* transform: scale(0.85); */
 }
-/* .button-title {
-  color: #042a2b;
-  font-family: var(--font-merriweather);
-} */
-
-/* .button-background img {
-  object-fit: cover;
-} */

@@ -3,8 +3,6 @@
   padding: 5% 15%;
 }
 .announcements-container {
-  /* border: 2px solid green; */
-  /* height: 40vh; */
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;

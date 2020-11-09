@@ -7,25 +7,14 @@ import { getAnnouncements } from "../../services/announcements";
 
 const Announcements = () => {
   const [setAnnouncements, setAllAnnouncements] = useState([]);
-  // const [queriedPosts, setQueriedPosts] = useState([]);
 
   useEffect(() => {
     const fetchAnnouncements = async () => {
       const announcements = await getAnnouncements();
       setAllAnnouncements(announcements);
-      // setQueriedAnnouncements(announcements);
     };
     fetchAnnouncements();
   }, []);
-
-  // const handleSearch = (event) => {
-  //   const newQueriedPosts = allPosts.filter((post) =>
-  //     post.title.toLowerCase().includes(event.target.value.toLowerCase())
-  //   );
-  //   setQueriedPosts(newQueriedPosts);
-  // };
-
-  // const handleSubmit = (event) => event.preventDefault();
 
   const announcementsJSX = setAnnouncements.map((announcement, index) => (
     <Announcement
@@ -50,8 +39,6 @@ const Announcements = () => {
         <h3>Check out the current announcements.</h3>
       </div>
       <div className="announcements-container">{announcementsJSX}</div>
-
-      {/* <Search onSubmit={handleSubmit} onChange={handleSearch} /> */}
     </div>
   );
 };

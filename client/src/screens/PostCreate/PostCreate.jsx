@@ -17,7 +17,7 @@ const PostCreate = (props) => {
     const { name, value } = event.target;
     setAnnouncement({
       ...announcement,
-      [name]: value, // [] not always an array, inside object allows you to declare variable as a key
+      [name]: value,
     });
   };
 

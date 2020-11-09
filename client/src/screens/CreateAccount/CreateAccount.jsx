@@ -4,7 +4,6 @@ import { createUser } from "../../services/users";
 import "../CreateAccount/CreateAccount.css";
 
 function CreateAccount(props) {
-  // const { signIn, setSignIn,} = props;
   const [created, setCreated] = useState(false);
   const [account, setAccount] = useState({
     firstName: "",
@@ -19,7 +18,7 @@ function CreateAccount(props) {
     const { name, value } = event.target;
     setAccount({
       ...account,
-      [name]: value, // [] not always an array, inside object allows you to declare variable as a key
+      [name]: value,
     });
   };
 
@@ -127,11 +126,7 @@ function CreateAccount(props) {
             I've read and accept the <span> Terms of Service </span> and
             <span> Privacy Policy </span>
           </label>
-          <button
-            type="submit"
-            className="create-account-submit"
-            // onClick={() => setSignIn(!signIn)}
-          >
+          <button type="submit" className="create-account-submit">
             Create Account
           </button>
         </form>
