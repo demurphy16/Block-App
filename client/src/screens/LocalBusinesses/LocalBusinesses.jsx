@@ -12,6 +12,7 @@ import mail from "../../assets/icons/mail.svg";
 import phone from "../../assets/icons/phone.svg";
 import restaurants from "../../assets/icons/restaurants.svg";
 import retail from "../../assets/icons/businesses.svg";
+import {Link} from "react-router-dom"
 import "../LocalBusinesses/LocalBusinesses.css";
 
 function LocalBusinesses(props) {
@@ -22,7 +23,7 @@ function LocalBusinesses(props) {
         <div className="business-to-home">
           <img src={arrow} alt="left-arrow" className="left-arrow-business" />
           <h4>
-            <a href={`/home`}>Back to Homepage</a>
+            <Link to="/home">Back to Homepage</Link>
           </h4>
         </div>
       </div>
