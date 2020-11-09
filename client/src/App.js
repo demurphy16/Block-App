@@ -11,11 +11,12 @@ import PostEdit from "../src/screens/PostEdit/PostEdit";
 import CreateAccount from "../src/screens/CreateAccount/CreateAccount";
 import Login from "../src/screens/Login/Login";
 import Layout from "../src/components/Shared/Layout/Layout";
-import { Route, Switch, Redirect } from "react-router-dom";
+import { Route, Switch, Redirect, useHistory } from "react-router-dom";
 import "./App.css";
 
 function App() {
   const [user, setUser] = useState(null);
+  const history = useHistory();
 
   function handleSetUser(user) {
     setUser(user);
@@ -44,6 +45,7 @@ function App() {
   function deleteStorage() {
     localStorage.clear("user");
     window.location.reload(false);
+    history.push("/");
   }
 
   return (

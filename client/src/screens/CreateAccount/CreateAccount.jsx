@@ -108,7 +108,7 @@ function CreateAccount(props) {
           <label>Password*</label>
           <input
             placeholder="Enter Password"
-            type="text"
+            type="password"
             value={account.password}
             name="password"
             required
@@ -116,7 +116,7 @@ function CreateAccount(props) {
             onChange={handleChange}
           />
           <label>Confirm Password*</label>
-          <input placeholder="Re-Enter Password" type="text" />
+          <input placeholder="Re-Enter Password" type="password" />
 
           <label htmlFor="terms-conditions" className="terms-conditions">
             <input
