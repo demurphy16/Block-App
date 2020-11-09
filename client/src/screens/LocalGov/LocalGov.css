@@ -57,8 +57,7 @@ body {
 
 .rep-container {
   display: flex;
-  justify-content: space-around;
-  /* border: 1px solid red; */
+  justify-content: center;
   height: 35vh;
   background-color: rgb(173, 186, 183);
   margin-top: 5vh;
@@ -67,7 +66,7 @@ body {
   display: flex;
   width: 45vw;
   background-color: white;
-  margin: 3vh 0;
+  margin: 3vh 30px;
   box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.486);
   max-width: 562px;
   background-color: rgb(242, 242, 242);
@@ -119,6 +118,6 @@ body {
 .mayor {
   /* display: flex; */
   /* flex-direction: row; */
-  border: 1px solid black;
+  /* border: 1px solid black; */
   height: 35vh;
 }
